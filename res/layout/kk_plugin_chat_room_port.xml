@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/room_root" android:background="@color/kk_background_black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/room_normal_layout" android:background="@color/kk_background_black" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:background="@color/kk_background_black" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.melot.kkplugin.room.mode.RoomVideoChatLayout android:id="@id/surfaceview_layout" android:background="@color/kk_background_black" android:clickable="true" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+                    <include layout="@layout/kk_plugin_audio_anim_layout" />
+                </com.melot.kkplugin.room.mode.RoomVideoChatLayout>
+            </RelativeLayout>
+            <ViewStub android:layout="@layout/kk_vert_full_userlist_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/touch_area_layout" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:id="@id/room_chat_tool_ly" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/room_top_bar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/kk_plugin_room_top_bar_ly" />
+            <include android:id="@id/second_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" layout="@layout/kk_plugin_room_bottom_view" />
+        </RelativeLayout>
+        <ProgressBar android:id="@id/room_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/start_live_anim_view" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_plugin_start_live_anim_view_3" android:layout_centerInParent="true" />
+        <com.melot.game.room.HeartFlowLayout android:id="@id/heart_flow_layout" android:layout_width="75.0dip" android:layout_height="230.0dip" android:layout_marginBottom="50.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom" android:id="@id/bang_room_bottom_layout" android:layout_width="fill_parent" android:layout_height="450.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/chat_2bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/msg_main_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="75.0dip">
+            <RelativeLayout android:gravity="bottom" android:id="@id/chat_content_layout" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="142.0dip">
+                <ListView android:id="@id/chat_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:stackFromBottom="true" android:transcriptMode="alwaysScroll" android:divider="@null" />
+            </RelativeLayout>
+            <TextView android:textSize="18.0sp" android:textColor="#ffebd29b" android:id="@id/user_in_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="2.0dip" android:shadowColor="#ff000000" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="2.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/chat_bar_layout" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="49.0dip">
+            <ImageView android:id="@id/share_btn" android:paddingRight="15.0dip" android:layout_width="54.0dip" android:layout_height="35.0dip" android:src="@drawable/kk_bang_room_share" />
+            <TextView android:textSize="16.0sp" android:textColorHint="@color/kk_game_text_black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/send_edit" android:background="@drawable/kk_vert_full_edit" android:paddingLeft="13.0dip" android:layout_width="wrap_content" android:layout_height="35.0dip" android:hint="@string/kk_vert_full_chat_hint" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/shot_screen_btn" android:paddingLeft="15.0dip" android:layout_width="54.0dip" android:layout_height="35.0dip" android:src="@drawable/kk_bang_shot_screen_btn" />
+            <RelativeLayout android:id="@id/im_layout" android:paddingLeft="15.0dip" android:layout_width="54.0dip" android:layout_height="35.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/im_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_bang_room_im_button" />
+                <TextView android:textSize="8.0sp" android:textColor="@color/kk_text_white" android:gravity="center" android:id="@id/im_number" android:background="@drawable/kk_bang_room_im_num_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-10.0dip" android:text="" android:singleLine="true" android:layout_toRightOf="@id/im_btn" />
+            </RelativeLayout>
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/redpackage_btn" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="54.0dip" android:layout_height="35.0dip" android:src="@drawable/kk_plugin_red_pkg_icon" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/gift_btn" android:paddingLeft="10.0dip" android:layout_width="54.0dip" android:layout_height="35.0dip" android:src="@drawable/kk_bang_room_gift_icon" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.melot.game.room.HeartFlowLayout android:id="@id/heart_flow_layout" android:layout_width="75.0dip" android:layout_height="230.0dip" android:layout_marginBottom="50.0dip" android:layout_alignBottom="@id/chat_2bar" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/turn_hori_btn" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/kk_room_turn_hori" android:layout_above="@id/chat_2bar" android:layout_alignParentRight="true" />
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/chat_edit_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/record_view" android:background="@color/kk_vert_full_edit_bg_color" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <EditText android:textSize="15.0sp" android:textColor="@color/kk_text_black" android:textColorHint="#ffc5c5c5" android:gravity="center_vertical" android:id="@id/chat_edit" android:background="@drawable/kk_vertfull_chatedit" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip" android:hint="@string/kk_vert_full_chat_hint" android:maxLines="4" android:singleLine="false" android:maxLength="20" android:layout_weight="1.0" android:imeOptions="flagNoExtractUi" />
+            <TextView android:enabled="false" android:textSize="16.0sp" android:textColor="@color/kk_text_black" android:gravity="center" android:id="@id/send_btn" android:background="@drawable/kk_vertroom_send_btn" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="27.0dip" android:layout_marginLeft="9.0dip" android:scaleType="centerInside" android:text="@string/kk_send" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/group_notify_item_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/kk_text_normal_size" android:textColor="@color/kk_room_text_gray" android:id="@id/yearDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" />
+    <FrameLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:foreground="@drawable/kk_view_foreground_bg">
+        <LinearLayout android:orientation="vertical" android:id="@id/notify_item_view" android:background="@drawable/kk_notify_itme_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="horizontal" android:id="@id/notify_item_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="12.0dip">
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/head" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/kk_default_avatar_big_men" />
+                <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_text_black" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:maxLength="10" android:layout_toLeftOf="@id/time" android:layout_toRightOf="@id/head" />
+                <TextView android:textSize="@dimen/kk_text_normal_size" android:textColor="@color/kk_room_text_gray" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_room_text_gray" android:ellipsize="end" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:maxLines="2" android:layout_toRightOf="@id/head" android:layout_below="@id/name" />
+            </RelativeLayout>
+            <ImageView android:id="@id/line" android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/operation" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                <TextView android:textSize="@dimen/kk_text_normal_size" android:textColor="@color/kk_app_color_dark_gray" android:id="@id/ignore" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="忽略" android:layout_toLeftOf="@id/div" android:layout_centerVertical="true" />
+                <View android:id="@id/div" android:background="@color/kk_match_uncometitle" android:layout_width="1.0dip" android:layout_height="20.0dip" android:layout_marginRight="8.0dip" android:layout_toLeftOf="@id/allow" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/kk_text_normal_size" android:textColor="@color/kk_standard_orange" android:id="@id/allow" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="同意" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/kk_text_small_size" android:textColor="@color/kk_room_text_gray" android:id="@id/state" android:padding="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="已同意" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

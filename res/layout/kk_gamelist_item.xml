@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/me_table_bg_selector" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.melot.kkcommon.widget.CircleImageView android:id="@id/search_avator" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/app_icon" android:scaleType="centerCrop" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/kk_game_text_black" android:ellipsize="end" android:id="@id/search_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:singleLine="true" />
+                <com.melot.game.room.widget.LevelImageView android:id="@id/search_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:scaleType="centerInside" />
+                <ImageView android:id="@id/search_live" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_game_live_search" android:scaleType="centerInside" />
+            </LinearLayout>
+            <TextView android:textSize="11.0sp" android:textColor="@color/kk_game_cata" android:ellipsize="end" android:id="@id/search_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <Button android:id="@id/btn_search_attention" android:background="@drawable/icon_search_attention" android:layout_width="64.0dip" android:layout_height="27.0dip" android:layout_marginRight="10.0dip" />
+    </LinearLayout>
+    <View android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

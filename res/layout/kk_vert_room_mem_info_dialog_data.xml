@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="11.0sp" android:textColor="@color/kk_game_level_pregress_note" android:id="@id/str" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="str" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/kk_background_black" android:id="@id/data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="int" android:layout_toRightOf="@id/str" />
+</RelativeLayout>

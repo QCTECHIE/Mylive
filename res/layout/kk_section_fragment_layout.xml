@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/section_fragment_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.melot.meshow.main.liveroom.PullToRefresh android:id="@id/pulltorefresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/popularity" android:background="@color/transparent" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@color/transparent" android:overScrollMode="never" />
+    </com.melot.meshow.main.liveroom.PullToRefresh>
+    <com.melot.game.room.widget.BangAnimProgress android:id="@id/loading_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar.Inverse" />
+    <LinearLayout android:orientation="vertical" android:id="@id/section_no_data" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/viewed_no_data_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_text_disable_gray" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/viewed_no_data_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/kk_news_sys_nonews" />
+    </LinearLayout>
+</RelativeLayout>

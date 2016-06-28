@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/contextmenu_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/topview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/itemview" />
+    <RelativeLayout android:id="@id/itemview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:id="@id/pinkline" android:background="@color/kk_standard_orange" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <ListView android:id="@id/listview" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/kk_ad_bg" android:dividerHeight="1.0dip" android:layout_below="@id/pinkline" />
+    </RelativeLayout>
+</RelativeLayout>

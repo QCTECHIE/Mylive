@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/game_room_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.melot.kkcommon.room.flyway.MarqueeView android:id="@id/flyway" android:background="@color/kk_black_50" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="29.0dip" app:bg_alpha="10" />
+    <com.melot.kkcommon.widget.WatermarkView android:id="@id/logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_marginRight="11.0dip" android:layout_alignParentRight="true" />
+    <include android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/kk_bang_room_loading" />
+    <include android:id="@id/info_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/kk_vertfull_info" />
+    <RelativeLayout android:id="@id/exit_btn" android:paddingLeft="14.0dip" android:paddingTop="17.0dip" android:layout_width="46.0dip" android:layout_height="48.0dip" android:layout_alignParentRight="true">
+        <ImageView android:duplicateParentState="true" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/kk_game_vertical_exit_btn" android:scaleType="center" />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="170.0dip" android:layout_height="32.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="12.0dip" android:layout_toLeftOf="@id/exit_btn">
+        <com.melot.game.room.bang.vert.RoomMemberHlist android:id="@id/kk_game_this_rank" android:layout_width="wrap_content" android:layout_height="32.0dip" />
+    </LinearLayout>
+    <com.melot.game.room.widget.ComboLayout android:orientation="vertical" android:id="@id/gift_combo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="80.0dip">
+        <include android:id="@id/item1" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="68.0dip" layout="@layout/kk_room_gift_combo_item" />
+        <include android:id="@id/item2" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_marginTop="64.0dip" layout="@layout/kk_room_gift_combo_item" />
+        <include android:id="@id/item3" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_marginTop="128.0dip" layout="@layout/kk_room_gift_combo_item" />
+    </com.melot.game.room.widget.ComboLayout>
+    <include android:id="@id/horn" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_above="@id/gift_combo" layout="@layout/kk_bang_red_packet_fly_way" />
+    <ViewStub android:id="@id/room_error_stub" android:layout="@layout/kk_bang_room_closed_error" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/room_end_video_stub_hori" android:layout="@layout/kk_room_end_video_hori" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.melot.game.room.HDVideoGiftLayout android:id="@id/hd_gift_layout" android:visibility="gone" android:layout_width="290.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    <include android:id="@id/bootom_bar" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:layout_alignParentBottom="true" layout="@layout/kk_bang_hori_bottom_bar" />
+    <include android:id="@id/send_combo_btn" android:visibility="gone" android:layout_width="178.0dip" android:layout_height="178.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" layout="@layout/kk_bang_sendgift_btn" />
+    <master.flame.danmaku.ui.widget.DanmakuView android:id="@id/sv_danmaku" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="5.0dip" android:layout_above="@id/bootom_bar" android:layout_below="@id/info_layout" />
+</RelativeLayout>

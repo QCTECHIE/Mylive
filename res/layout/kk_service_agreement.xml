@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/service_agreement_root" android:background="@color/kk_background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/top_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/service_agreement_title" layout="@layout/kk_bang_title_bar" />
+    </LinearLayout>
+    <ScrollView android:id="@id/scrollView" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_below="@id/top_view">
+        <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_app_color_black" android:id="@id/textView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" />
+    </ScrollView>
+</RelativeLayout>

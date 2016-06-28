@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/news_menupop_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/kk_text_normal_size" android:textColor="@color/kk_btn_a_selector" android:gravity="center" android:id="@id/btn_delete" android:background="@drawable/kk_btn_a_selector" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="15.0dip" />
+    <Button android:textSize="@dimen/kk_text_normal_size" android:textColor="@color/kk_app_color_black" android:gravity="center" android:id="@id/btn_delete_allroom" android:background="@drawable/kk_news_greybtn" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="15.0dip" />
+    <Button android:textSize="@dimen/kk_text_normal_size" android:textColor="@color/kk_app_color_black" android:gravity="center" android:id="@id/btn_cancel" android:background="@drawable/kk_news_greybtn" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="20.0dip" />
+</LinearLayout>

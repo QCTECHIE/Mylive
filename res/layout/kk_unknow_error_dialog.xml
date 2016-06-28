@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/title_bar" android:layout_width="250.0dip" android:layout_height="280.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_unknow_error_pic" android:contentDescription="@null" />
+    <LinearLayout android:orientation="vertical" android:background="#ffeff1f3" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="101.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="#ff8a9399" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/kk_unknow_error_tip1" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff8a9399" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/kk_unknow_error_tip2" android:drawableLeft="@drawable/kk_unknow_error_point" android:drawablePadding="5.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff8a9399" android:id="@id/error_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/kk_unknow_error_tip3" android:drawableLeft="@drawable/kk_unknow_error_point" android:drawablePadding="5.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="15.0sp" android:textColor="#ff6a7f90" android:gravity="center" android:id="@id/i_know_btn" android:background="@drawable/kk_i_know_btn_bg" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/kk_know" />
+</LinearLayout>

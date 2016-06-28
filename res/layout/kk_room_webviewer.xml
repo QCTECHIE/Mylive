@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root_view" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/top_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/match_name_layout" layout="@layout/kk_bang_title_bar" />
+    </LinearLayout>
+    <ProgressBar android:id="@id/progress_bar_h" android:background="@color/kk_app_color_green" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/top_view" style="?android:attr/progressBarStyleHorizontal" />
+    <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/progress_bar_h" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/match_name_layout" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/progress_bar_h" android:layout_centerInParent="true">
+        <com.melot.game.room.widget.BangAnimProgress android:id="@id/progress_center" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/Widget.ProgressBar.Inverse" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/web_error_image" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_text_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/kk_web_err_str" />
+    </LinearLayout>
+</RelativeLayout>

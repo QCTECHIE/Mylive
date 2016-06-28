@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/luckystar_tip_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/kk_body_text" android:textColor="@color/kk_background_white" android:gravity="center" android:id="@id/text" android:background="@drawable/kk_luckystart_lucky" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:paddingBottom="5.0dip" android:layout_width="300.0dip" android:layout_height="wrap_content" android:maxWidth="250.0dip" android:singleLine="true" android:layout_centerInParent="true" />
+</RelativeLayout>

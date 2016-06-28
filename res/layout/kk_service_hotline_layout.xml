@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/serviceHotlinelayout" android:background="@drawable/kk_login_edit_bg" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:onClick="onServiceHotlineClick"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/kk_room_text_gray" android:id="@id/serviceHotline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/serviceHotline" android:layout_centerVertical="true" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/kk_room_text_gray" android:id="@id/s_phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/s_phone_number" android:layout_toLeftOf="@id/phone_arrow_layout" android:layout_centerVertical="true" />
+    <LinearLayout android:id="@id/phone_arrow_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/phone_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/kk_login_merger_arrow" android:contentDescription="@string/more_count_bind" />
+    </LinearLayout>
+</RelativeLayout>

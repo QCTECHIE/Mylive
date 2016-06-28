@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.melot.game.room.namecard.personalvideo.VideoSurface android:id="@id/surface" android:layout_width="fill_parent" android:layout_height="202.0dip" />
+    <master.flame.danmaku.ui.widget.DanmakuView android:id="@id/danmaku" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="202.0dip" />
+    <include android:id="@id/loadingview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="202.0dip" layout="@layout/kk_video_loading_view" />
+    <include android:id="@id/video_error" android:layout_width="fill_parent" android:layout_height="202.0dip" layout="@layout/kk_room_closed_error" />
+    <ImageView android:id="@id/back" android:paddingLeft="11.0dip" android:paddingTop="9.0dip" android:layout_width="39.0dip" android:layout_height="37.0dip" android:src="@drawable/kk_video_back" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/v_control_bar" android:background="@drawable/kk_video_v_contralbar_bg" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_alignBottom="@id/surface">
+        <ImageView android:id="@id/v_play_icon" android:layout_width="28.0dip" android:layout_height="30.0dip" android:src="@drawable/kk_video_v_play" android:scaleType="centerInside" />
+        <SeekBar android:id="@id/v_video_seek" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/personalVideo.SeekBar.v" />
+        <TextView android:textSize="@dimen/kk_text_10_size" android:textColor="@color/kk_text_white" android:id="@id/v_video_dur" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="00:00/00:00" />
+        <ImageView android:id="@id/v_danmu_switch_icon" android:layout_width="32.0dip" android:layout_height="30.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/kk_video_v_danmu_switch" android:scaleType="centerInside" />
+        <ImageView android:id="@id/v_turn_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_video_v_turn" android:scaleType="centerInside" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/info_layout" android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/surface">
+        <RelativeLayout android:gravity="center_vertical" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <ImageView android:id="@id/zan_icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/kk_video_v_zan" android:scaleType="centerInside" />
+            <TextView android:textSize="@dimen/kk_text_normal_size" android:textColor="@color/kk_game_orange" android:id="@id/zan_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2001" android:layout_toRightOf="@id/zan_icon" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/kk_v_share_icon" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/kk_video_v_share" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+            <ImageView android:id="@id/v_danmu_send" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="14.0dip" android:src="@drawable/kk_video_v_danmu_send" android:scaleType="centerInside" android:layout_toLeftOf="@id/kk_v_share_icon" android:layout_alignParentRight="true" />
+            <View android:background="#ffd1d1d1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:background="#ffd1d1d1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+                <RelativeLayout android:id="@id/owner_info_layout" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="73.0dip">
+                    <com.melot.kkcommon.widget.CircleImageView android:id="@id/avatar" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginLeft="13.0dip" android:src="@drawable/kk_default_avatar_big_men" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_text_black" android:id="@id/nick" android:paddingLeft="4.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="15.0dip" android:text="NickNickNickNickNickNickNick" android:singleLine="true" android:layout_toLeftOf="@id/attention" android:layout_toRightOf="@id/avatar" />
+                    <TextView android:textSize="@dimen/kk_text_normal_size" android:textColor="@color/kk_room_text_gray" android:id="@id/fans_count" android:paddingLeft="4.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="NickNickNickNickNickNickNick" android:singleLine="true" android:layout_toLeftOf="@id/attention" android:layout_toRightOf="@id/avatar" android:layout_below="@id/nick" android:layout_alignLeft="@id/nick" />
+                    <Button android:id="@id/attention" android:background="@drawable/kk_video_v_attention_btn" android:layout_width="62.0dip" android:layout_height="28.0dip" android:layout_marginRight="16.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:background="#ffd1d1d1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" />
+                <RelativeLayout android:id="@id/des_layout" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/des_arrow" android:clickable="true" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/kk_video_v_desc_down_arrow" android:scaleType="centerInside" android:layout_alignParentRight="true" />
+                    <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_text_black" android:id="@id/des_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:text="titletitletitletitletitletitlet" android:layout_toLeftOf="@id/des_arrow" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="@dimen/kk_text_normal_size" android:textColor="@color/kk_room_text_gray" android:ellipsize="end" android:id="@id/des" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:text="descdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdescdesc" android:maxLines="1" android:layout_below="@id/des_title" android:layout_alignLeft="@id/des_title" />
+                    <View android:background="#ffd1d1d1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <View android:background="#ffd1d1d1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="8.0dip" />
+                <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_text_black" android:gravity="center_vertical" android:background="@color/kk_background_white" android:paddingLeft="13.0dip" android:layout_width="fill_parent" android:layout_height="34.0dip" android:text="@string/kk_his_video_str" />
+                <View android:background="#ffd1d1d1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <ListView android:id="@id/list" android:background="@color/kk_background_white" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@color/kk_match_uncometitle" android:dividerHeight="1.0px" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

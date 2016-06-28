@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/update_bar_root" android:layout_width="fill_parent" android:layout_height="53.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/update_bar_content" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="53.0dip">
+        <FrameLayout android:layout_gravity="center" android:id="@id/iv_content" android:background="@color/transparent" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+    </FrameLayout>
+    <ImageView android:id="@id/line" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@drawable/kk_divider_horizontal_timeline" android:scaleType="fitXY" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="178.0dip" android:layout_height="178.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/numbtns" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#fff0ce82" android:gravity="center" android:id="@id/btn66" android:background="@drawable/kk_bang_send_gift_num_bg" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="122.0dip" android:text="66" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#fff0ce82" android:gravity="center" android:id="@id/btn100" android:background="@drawable/kk_bang_send_gift_num_bg" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="63.0dip" android:text="100" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#fff0ce82" android:gravity="center" android:id="@id/btn520" android:background="@drawable/kk_bang_send_gift_num_bg" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="45.0dip" android:layout_marginTop="18.0dip" android:text="520" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#fff0ce82" android:gravity="center" android:id="@id/btn1314" android:background="@drawable/kk_bang_send_gift_num_bg" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginLeft="106.0dip" android:layout_marginTop="8.0dip" android:text="1314" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/sendbtn" android:background="@drawable/kk_bang_sendgift_btn" android:layout_width="110.0dip" android:layout_height="112.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <TextView android:textSize="23.0sp" android:textStyle="bold" android:textColor="@color/kk_text_white" android:gravity="center" android:id="@id/sendnum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="29.0dip" android:text="3''00" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

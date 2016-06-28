@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/live_room_card_root" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/root" android:background="@color/kk_background_white" android:paddingTop="3.0dip" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="3.0dip" android:baselineAligned="false">
+        <RelativeLayout android:id="@id/click_area1" android:background="@drawable/kk_view_foreground_white_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/room_thumb_left" android:layout_width="66.69998dip" android:layout_height="50.0dip" android:scaleType="centerCrop" android:contentDescription="@null" />
+            <TextView android:textSize="@dimen/kk_text_normal_size" android:textColor="@color/kk_room_text_gray" android:ellipsize="end" android:id="@id/room_name_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="10.0dip" android:singleLine="true" android:maxLength="10" android:layout_toRightOf="@id/room_thumb_left" />
+            <TextView android:textSize="@dimen/kk_text_normal_size" android:textColor="@color/kk_text_gray" android:ellipsize="end" android:id="@id/room_mem_count_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:singleLine="true" android:maxLength="10" android:layout_toRightOf="@id/room_thumb_left" android:layout_below="@id/room_name_left" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/click_area2" android:background="@drawable/kk_view_foreground_white_bg" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="1.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/room_thumb_right" android:layout_width="66.69998dip" android:layout_height="50.0dip" android:scaleType="centerCrop" android:contentDescription="@null" />
+            <TextView android:textSize="@dimen/kk_text_normal_size" android:textColor="@color/kk_room_text_gray" android:ellipsize="end" android:id="@id/room_name_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="10.0dip" android:singleLine="true" android:maxLength="10" android:layout_toRightOf="@id/room_thumb_right" />
+            <TextView android:textSize="@dimen/kk_text_normal_size" android:textColor="@color/kk_text_gray" android:ellipsize="end" android:id="@id/room_mem_count_right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:singleLine="true" android:maxLength="10" android:layout_toRightOf="@id/room_thumb_right" android:layout_below="@id/room_name_right" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bottomLine" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <ImageView android:id="@id/bottom_line_image" android:background="@drawable/kk_me_table_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@null" />
+        <View android:id="@id/bottom_line" android:background="@color/kk_me_background" android:layout_width="fill_parent" android:layout_height="7.0dip" />
+        <ImageView android:id="@id/bottom_image_line2" android:background="@drawable/kk_me_table_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@null" />
+    </LinearLayout>
+</LinearLayout>

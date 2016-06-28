@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top_view" android:background="@color/kk_title_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_game_back_btn" android:onClick="onBack" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/kk_text_white" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/search_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_search_bg_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="onSearch" />
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager android:id="@id/viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_view" />
+</RelativeLayout>

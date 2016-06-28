@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rootview" android:background="@color/kk_me_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/top_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/bind_account_title" layout="@layout/kk_bang_title_bar" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/kk_bind_hind_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/bind_account_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/sns_bind_layout" android:background="@drawable/kk_login_edit_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip">
+                <ImageView android:id="@id/line1" android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:gravity="center_vertical" android:id="@id/qq_bind_view" android:background="@drawable/me_table_bg_selector" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:onClick="onQQBindClick">
+                    <ImageView android:id="@id/qq_bind_icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_bind_qq_icon" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_text_black" android:id="@id/qq_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="@string/more_count_bind_qq_account" android:layout_toRightOf="@id/qq_bind_icon_layout" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_room_text_gray" android:id="@id/qq_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/qq_progress_bar" android:layout_centerVertical="true" />
+                    <ProgressBar android:id="@id/qq_progress_bar" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_toLeftOf="@id/qq_arrow" android:layout_centerVertical="true" style="@android:style/Widget.ProgressBar.Inverse" />
+                    <ImageView android:id="@id/qq_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/kk_me_arrow_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/more_count_bind" />
+                </RelativeLayout>
+                <ImageView android:id="@id/line2" android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <RelativeLayout android:gravity="center_vertical" android:id="@id/weibo_bind_view" android:background="@drawable/me_table_bg_selector" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:onClick="onWeiboBindClick">
+                    <ImageView android:id="@id/weibo_bind_icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_bind_weibo_icon" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_text_black" android:id="@id/weibo_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="@string/more_count_bind_weibo_account" android:layout_toRightOf="@id/weibo_bind_icon_layout" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_room_text_gray" android:id="@id/weibo_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/weibo_progress_bar" android:layout_centerVertical="true" />
+                    <ProgressBar android:id="@id/weibo_progress_bar" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_toLeftOf="@id/weibo_arrow" android:layout_centerVertical="true" style="@android:style/Widget.ProgressBar.Inverse" />
+                    <ImageView android:id="@id/weibo_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/kk_me_arrow_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/more_count_bind" />
+                </RelativeLayout>
+                <ImageView android:id="@id/line3" android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            </LinearLayout>
+            <ImageView android:id="@id/line4" android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="15.0dip" />
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/phone_bind_view" android:background="@drawable/me_table_bg_selector" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:onClick="onPhoneBindClick">
+                <ImageView android:id="@id/phone_bind_icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_bind_mobile_phone" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_text_black" android:id="@id/phone_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="@string/more_count_bind_phone_account" android:layout_toRightOf="@id/phone_bind_icon_layout" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_room_text_gray" android:id="@id/phone_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/phone_progress_bar" android:layout_centerVertical="true" />
+                <ProgressBar android:id="@id/phone_progress_bar" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_toLeftOf="@id/phone_arrow" android:layout_centerVertical="true" style="@android:style/Widget.ProgressBar.Inverse" />
+                <ImageView android:id="@id/phone_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/kk_me_arrow_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/more_count_bind" />
+            </RelativeLayout>
+            <ImageView android:id="@id/line5" android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/phone_bind_tips_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip">
+                <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_text_gray" android:id="@id/phone_bind_tips_act" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bind_phone_tips_act" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/room_top_status_bar_hd" android:background="@color/kk_white_30" android:layout_width="fill_parent" android:layout_height="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/room_top_status_bar_hd_wifi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:src="@drawable/kk_bang_wifi_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/kk_background_black" android:id="@id/room_top_status_bar_hd_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12:00" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/room_top_status_bar_hd_battery" android:layout_width="19.0dip" android:layout_height="11.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/room_top_status_bar_hd_battery_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_bang_battery_empty" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/room_top_status_bar_hd_battery_image_pr" android:background="@color/kk_background_black" android:layout_width="fill_parent" android:layout_height="9.0dip" android:layout_marginLeft="1.5dip" android:layout_marginTop="1.5dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="2.0dip" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/kk_background_black" android:id="@id/room_top_status_bar_hd_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="50%" android:layout_toLeftOf="@id/room_top_status_bar_hd_battery" android:layout_centerVertical="true" />
+</RelativeLayout>

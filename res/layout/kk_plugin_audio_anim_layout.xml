@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/audio_anim_layout_root" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.melot.kkplugin.widget.CircleDownloadImageView android:id="@id/audio_head" android:layout_width="105.0dip" android:layout_height="105.0dip" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/scale_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/scale_bg" android:background="@drawable/kk_plugin_shape_count_down_bg" android:layout_width="105.0dip" android:layout_height="105.0dip" android:layout_centerInParent="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/kk_text_white" android:id="@id/load_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/kk_loading_in_channel" android:layout_below="@id/loading" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView android:textSize="25.0sp" android:textColor="@color/kk_text_white" android:id="@id/time_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" android:layout_centerInParent="true" />
+    <RelativeLayout android:id="@id/circle" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/water_circle_line" android:layout_width="105.0dip" android:layout_height="105.0dip" android:src="@drawable/kk_plugin_circle_line" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/water_circle_line1" android:layout_width="105.0dip" android:layout_height="105.0dip" android:src="@drawable/kk_plugin_circle_line" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/water_circle_line2" android:layout_width="105.0dip" android:layout_height="105.0dip" android:src="@drawable/kk_plugin_circle_line" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

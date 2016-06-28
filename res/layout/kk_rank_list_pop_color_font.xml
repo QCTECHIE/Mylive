@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rank_color_list_root" android:background="@drawable/kk_rank_list_item_bg_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/line_image1" android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" android:contentDescription="@null" />
+    <ListView android:gravity="center" android:id="@id/rank_color_list" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="@android:color/transparent" android:divider="@color/kk_match_uncometitle" android:dividerHeight="1.0px" />
+    <ImageView android:id="@id/line_image2" android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" android:contentDescription="@null" />
+</LinearLayout>

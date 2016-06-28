@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/loadingview" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/loading_thumb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="#ff000000" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/loadinglayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/loading_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_bang_loading" android:layout_centerInParent="true" />
+    </LinearLayout>
+    <ViewStub android:id="@id/room_end_video_stub" android:layout="@layout/kk_bang_room_video_end" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

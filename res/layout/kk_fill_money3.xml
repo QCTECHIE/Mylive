@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/fill_money3_root" android:background="@color/kk_background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/top_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/fill_money3_title" layout="@layout/kk_bang_title_bar" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/kktv_activity_textsize" android:textColor="#ff848383" android:id="@id/card_moeny_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="5.0dip" android:text="@string/card_money" />
+    <LinearLayout android:orientation="vertical" android:id="@id/fill_money3_content" android:background="@drawable/kk_fill_money_info_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="8.0dip">
+        <LinearLayout android:paddingLeft="18.0dip" android:paddingTop="18.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="#ff848383" android:id="@id/account_str" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/to_account_str" />
+            <TextView android:textColor="@color/kk_custom_black" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="名字" android:layout_toRightOf="@id/account_str" />
+        </LinearLayout>
+        <View android:id="@id/fill_money3_line" android:background="@drawable/kk_fill_money_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:id="@id/fill_money3_num" android:paddingLeft="18.0dip" android:paddingTop="18.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="#ff848383" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_money" />
+            <TextView android:textColor="@color/kk_custom_black" android:id="@id/pay_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="名字" android:layout_toRightOf="@id/account_str" />
+        </LinearLayout>
+        <View android:id="@id/fill_money3_line1" android:background="@drawable/kk_fill_money_line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:id="@id/trench" android:paddingLeft="18.0dip" android:paddingTop="18.0dip" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textColor="#ff848383" android:id="@id/account_from_str" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/account_from_str" />
+            <TextView android:textColor="@color/kk_custom_black" android:id="@id/account_from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/account_from_str" android:layout_toRightOf="@id/account_from_str" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/kk_transparent_70" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/chat_bar" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <Button android:id="@id/btn_back_top" android:background="@drawable/kk_room_chat_pop_hotword" android:visibility="gone" android:layout_width="79.0dip" android:layout_height="37.0dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="6.0dip" />
+        <EditText android:textSize="14.0sp" android:textColorHint="@color/kk_text_disable_gray" android:id="@id/edit_content" android:background="@drawable/kk_login_edit_bg" android:paddingLeft="10.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="7.0dip" android:singleLine="true" android:maxLength="20" android:layout_weight="1.0" android:imeOptions="flagNoExtractUi" />
+        <Button android:id="@id/btn_send_top" android:background="@drawable/kk_danma_send" android:layout_width="79.0dip" android:layout_height="37.0dip" android:layout_marginLeft="6.0dip" android:layout_marginRight="7.0dip" android:layout_alignParentRight="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/list_layout" android:layout_width="fill_parent" android:layout_height="1.0dip">
+        <ListView android:id="@id/listview" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:scrollingCache="@color/transparent" android:divider="@drawable/kk_room_chat_list_line" />
+    </LinearLayout>
+</LinearLayout>

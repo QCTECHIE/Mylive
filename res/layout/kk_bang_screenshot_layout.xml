@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rootview" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/bang_screenshot_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_marginBottom="45.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/bang_screenshot_pic" android:layout_width="265.0dip" android:layout_height="390.0dip" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/sharetitlelayout" android:background="@color/kk_text_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="@color/kk_background_black" android:gravity="center" android:id="@id/sharetext_top" android:paddingTop="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kk_screenshot_share" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/pop_share_frist_raw_view" android:background="@color/kk_text_white" android:paddingTop="25.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/pop_share_view1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/weixin_share_friend" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/kk_share_weixin_friend" android:scaleType="centerInside" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/pop_share_view2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/weixin_share_circle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/kk_share_weixin_circle" android:scaleType="centerInside" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/pop_share_view5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/qq_share" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/kk_share_qq" android:scaleType="centerInside" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/pop_share_view3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/qqZone_share" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/kk_share_qqkj" android:scaleType="centerInside" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/pop_share_view4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/weibo_share" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/kk_share_weibo" android:scaleType="centerInside" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/pop_share_line" android:background="@color/kk_background_black" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/cancel" />
+    <Button android:textSize="13.0sp" android:textColor="@color/kk_background_black" android:gravity="center" android:id="@id/cancel_btn" android:background="@color/kk_background_white" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="51.0dip" android:text="@string/kk_cancel" android:onClick="cancelClick" />
+</LinearLayout>

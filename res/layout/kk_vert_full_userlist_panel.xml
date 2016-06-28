@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#80ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/top_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/rootview" layout="@layout/kk_bang_title_bar" />
+    </LinearLayout>
+    <ListView android:id="@id/list" android:background="@color/kk_background_white" android:scrollbars="none" android:fadingEdge="none" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@color/transparent" android:dividerHeight="0.0px" android:layout_weight="1.0" android:layout_below="@id/top_view" />
+</LinearLayout>

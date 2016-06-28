@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/contacts_list_root" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/list" android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@drawable/kk_list_divider" />
+    <ImageView android:id="@id/none_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_attention_focus_prompt" android:layout_centerInParent="true" />
+    <com.melot.game.room.widget.BangAnimProgress android:id="@id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@android:style/Widget.ProgressBar.Inverse" />
+</RelativeLayout>

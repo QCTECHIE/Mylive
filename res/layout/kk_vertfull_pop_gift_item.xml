@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/pop_gift_item_root" android:layout_width="80.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.melot.game.room.gift.SelectableImageView android:id="@id/gift_thumb" android:padding="3.0dip" android:clickable="false" android:layout_width="46.0dip" android:layout_height="46.0dip" android:scaleType="centerInside" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/gift_thumb_mask" android:layout_width="49.0dip" android:layout_height="49.0dip" android:src="@drawable/kk_room_gift_belong_mask" android:scaleType="centerInside" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffbbbbbb" android:gravity="center" android:id="@id/gift_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:layout_below="@id/gift_thumb" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/kk_game_orange" android:gravity="center" android:id="@id/gift_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:layout_below="@id/gift_name" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.melot.game.room.bang.BangRankHomePageView android:orientation="vertical" android:background="@color/kk_me_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <include android:id="@id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true" layout="@layout/kk_bang_tab" />
+        <ImageView android:id="@id/left_bt" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/kk_game_title_back" android:layout_centerVertical="true" />
+    </FrameLayout>
+    <android.support.v4.view.ViewPager android:id="@id/pages" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.melot.game.room.bang.BangRankHomePageView>

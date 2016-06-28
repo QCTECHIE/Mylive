@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/gift_list_item_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/item_bg" android:background="@drawable/kk_rank_list_item_bg_white" android:paddingBottom="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/gift_icon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/gift_week_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/kk_gift_star_icon" />
+        <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_text_black" android:ellipsize="end" android:id="@id/gift_name" android:paddingTop="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxWidth="74.0dip" android:singleLine="true" android:layout_toRightOf="@id/gift_icon" />
+        <TextView android:textColor="#ffa9a9a9" android:id="@id/gift_count" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_below="@id/gift_name" android:layout_alignLeft="@id/gift_name" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffa9a9a9" android:ellipsize="end" android:gravity="right" android:id="@id/user_name" android:paddingTop="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginRight="16.0dip" android:maxWidth="150.0dip" android:singleLine="true" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/user_lv" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="16.0dip" android:layout_below="@id/gift_name" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/line_layout" android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="82.0dip" android:layout_below="@id/item_bg" />
+</RelativeLayout>

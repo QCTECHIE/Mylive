@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/kk_bang_red_packet_fly_way_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true">
+        <TextView android:textSize="10.0sp" android:textColor="@color/kk_white" android:id="@id/redpacket_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="3.0dip" android:text="@string/kk_bang_red_package_speaker" />
+        <TextView android:textSize="8.0sp" android:textColor="@color/kk_color_9cc9e0" android:id="@id/room_name" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/kk_bang_red_package_speaker" android:layout_below="@id/redpacket_name" android:layout_alignLeft="@id/redpacket_name" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/grab_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_toRightOf="@id/room_name" android:layout_alignTop="@id/room_name" android:layout_alignBottom="@id/room_name">
+            <TextView android:textSize="8.0sp" android:textColor="@color/kk_white" android:id="@id/grab_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kk_bang_red_package_speaker_grab" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/kk_namecard_arrow_normal" android:layout_toRightOf="@id/room_name" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/redpacket_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_bang_red_packet_fly_way" />
+</RelativeLayout>

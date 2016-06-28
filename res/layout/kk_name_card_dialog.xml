@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/name_card_dialog_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/name_card_dialog" android:background="@drawable/kk_dialog_view_content_bg" android:layout_width="274.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/kk_title_text" android:textColor="@color/kk_text_black" android:gravity="center" android:id="@id/title" android:background="@color/kk_custom_dialog_bg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" />
+        <RelativeLayout android:id="@id/edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip">
+            <com.melot.kkcommon.widget.EditInputLayout android:id="@id/name_card_old" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <View android:id="@id/line" android:background="@color/kk_group_bnt_bg" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/line_lin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/kk_button_text" android:textColor="@color/kk_room_text_gray" android:id="@id/negative_button" android:background="@drawable/kk_group_btn" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_weight="1.0" />
+            <View android:id="@id/line_lin_line" android:background="@color/kk_group_bnt_bg" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <Button android:textSize="@dimen/kk_button_text" android:textColor="@color/kk_game_text_black" android:id="@id/positive_button" android:background="@drawable/kk_group_btn" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

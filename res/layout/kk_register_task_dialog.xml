@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/register_task_dialog_root" android:background="@android:color/transparent" android:paddingLeft="30.0dip" android:paddingRight="22.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/register_task_dialog_view" android:background="@drawable/kk_dialog_view_content_bg" android:layout_width="fill_parent" android:layout_height="164.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="8.0dip">
+        <ImageView android:id="@id/gold_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/kk_register_complete_money" />
+        <TextView android:textSize="24.0sp" android:textColor="@color/kk_app_color_yellow" android:id="@id/register_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="22.0dip" android:layout_toRightOf="@id/gold_image" />
+        <TextView android:textSize="@dimen/kk_body_text" android:textColor="@color/kk_app_color_black" android:gravity="center" android:id="@id/money_hint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/kk_task_get_money_register_hint" android:layout_below="@id/gold_image" />
+        <Button android:textColor="@color/kk_standard_orange" android:id="@id/get_money_bt" android:background="@drawable/kk_custom_dialog_btn" android:layout_width="fill_parent" android:layout_height="37.0dip" android:text="@string/kk_task_get_money_register_btn_string" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/get_money_image" android:background="@drawable/kk_popup_view_horizontal_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/get_money_bt" />
+    </RelativeLayout>
+</RelativeLayout>

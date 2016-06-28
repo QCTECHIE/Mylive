@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rootview" android:background="@color/kk_me_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/top_view" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <include android:id="@id/more_setting_title" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/kk_bang_title_bar" />
+    </LinearLayout>
+    <ScrollView android:id="@id/more_setting_scroll" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/more_setting_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:orientation="horizontal" android:id="@id/live_shot_setting" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="115.0dip" android:layout_marginTop="11.0dip">
+                <ImageView android:id="@id/live_setting_line3" android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <TextView android:textSize="@dimen/kk_text_group_size" android:textColor="@color/kk_text_black" android:id="@id/live_setting_definition_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="13.0dip" android:text="@string/live_room_definition" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/live_setting_definition_title">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/kk_me_text" android:gravity="center" android:id="@id/live_setting_sd" android:layout_width="80.0dip" android:layout_height="50.0dip" android:text="@string/live_definition_sd" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/kk_me_text" android:gravity="center" android:id="@id/live_setting_hd" android:layout_width="80.0dip" android:layout_height="50.0dip" android:text="@string/live_definition_hd" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <TextView android:textSize="@dimen/kk_me_text" android:gravity="center" android:id="@id/live_setting_super" android:layout_width="80.0dip" android:layout_height="50.0dip" android:text="@string/live_definition_super" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <ImageView android:id="@id/live_setting_line4" android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <ImageView android:id="@id/live_setting_line5" android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="11.0dip" />
+            <RelativeLayout android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/kk_text_group_size" android:textColor="@color/kk_text_black" android:id="@id/live_shot_setting_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="13.0dip" android:text="@string/live_shot_setting" android:singleLine="true" />
+                <LinearLayout android:id="@id/live_setting_definition_news" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/live_shot_setting_txt">
+                    <RelativeLayout android:id="@id/live_setting_display_layout" android:layout_width="wrap_content" android:layout_height="120.0dip" android:layout_weight="1.0">
+                        <ImageView android:id="@id/live_setting_display_icon" android:layout_width="100.0dip" android:layout_height="60.0dip" android:layout_centerInParent="true" />
+                        <TextView android:textSize="@dimen/kk_me_text" android:id="@id/live_setting_display_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/live_setting_vertical" android:layout_below="@id/live_setting_display_icon" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/live_setting_hide_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ImageView android:id="@id/live_setting_hide_icon" android:layout_width="100.0dip" android:layout_height="60.0dip" android:layout_centerInParent="true" />
+                        <TextView android:textSize="@dimen/kk_me_text" android:textColor="@color/kk_room_text_gray" android:id="@id/live_setting_hide_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/live_setting_horizontal" android:layout_below="@id/live_setting_hide_icon" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <ImageView android:id="@id/live_setting_line7" android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" android:layout_below="@id/live_setting_definition_news" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/live_setting_definition" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="11.0dip">
+                <ImageView android:id="@id/live_setting_line10" android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <com.melot.kkcommon.widget.SwitchButton android:id="@id/live_settting_definition_set" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/image_description" />
+                <TextView android:textSize="@dimen/kk_text_group_size" android:textColor="@color/kk_text_black" android:id="@id/live_settting_definition_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:text="@string/live_display_news" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/live_setting_news_layout" android:background="@drawable/me_table_bg_selector" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <ImageView android:id="@id/live_setting_line11" android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <TextView android:textSize="@dimen/kk_text_group_size" android:textColor="@color/kk_text_black" android:id="@id/live_setting_news_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:text="@string/live_display_level" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <Spinner android:textSize="@dimen/kk_text_group_size" android:textColor="@color/kk_room_text_gray" android:id="@id/live_setting_news_level" android:background="@drawable/kk_live_setting_spinner_selector" android:layout_width="60.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/live_setting_news_txt" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/me_task_right_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dip" android:src="@drawable/kk_me_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/live_setting_line12" android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/live_setting_cloud_layout" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="11.0dip">
+                <ImageView android:id="@id/live_setting_line8" android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" />
+                <com.melot.kkcommon.widget.SwitchButton android:id="@id/live_settting_cloud_set" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13.0dip" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/image_description" />
+                <TextView android:textSize="@dimen/kk_text_group_size" android:textColor="@color/kk_text_black" android:id="@id/screen_fly_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:text="@string/live_cloud_setting" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/live_setting_line9" android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

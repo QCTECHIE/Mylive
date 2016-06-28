@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="text" format="reference|string" />
+    <attr name="isFirst" format="boolean" />
+    <attr name="isLast" format="boolean" />
+    <attr name="checkedPic" format="reference" />
+    <attr name="isChecked" format="boolean" />
+    <attr name="unCheckedPic" format="reference" />
+    <attr name="borderWidth" format="integer" />
+    <attr name="count" format="integer" />
+    <attr name="width" format="dimension" />
+    <attr name="height" format="dimension" />
+    <attr name="margin" format="dimension" />
+    <attr name="normal_icon" format="reference" />
+    <attr name="selected_icon" format="reference" />
+    <attr name="state_on" format="boolean" />
+    <attr name="bg_on" format="reference" />
+    <attr name="bg_off" format="reference" />
+    <attr name="src_on" format="reference" />
+    <attr name="src_off" format="reference" />
+    <attr name="bg_alpha" format="integer" />
+    <attr name="pstsIndicatorColor" format="color" />
+    <attr name="pstsIndicatorHeight" format="dimension" />
+    <attr name="pstIndicatorPaddingLeftRight" format="dimension" />
+    <attr name="pstsTabPaddingLeftRight" format="dimension" />
+    <attr name="pstsTabBackground" format="reference" />
+    <attr name="pstsTabTextColor" format="reference" />
+    <attr name="pstsTabTextSize" format="dimension" />
+    <attr name="pstsUnderlineColor" format="color" />
+    <attr name="pstsUnderlineHeight" format="dimension" />
+    <attr name="pstsDividerColor" format="color" />
+    <attr name="pstsDividerPadding" format="dimension" />
+    <attr name="pstsScrollOffset" format="dimension" />
+    <attr name="pstsShouldExpand" format="boolean" />
+    <attr name="pstsTextAllCaps" format="boolean" />
+    <attr name="item_src" format="reference" />
+    <attr name="item_text" format="reference|string" />
+    <attr name="item_selected" format="boolean" />
+    <attr name="roundWidth" format="dimension" />
+    <attr name="roundHeight" format="dimension" />
+    <attr name="txt" format="reference|string" />
+    <attr name="checked" format="boolean" />
+    <attr name="mode">
+        <enum name="left" value="0" />
+        <enum name="right" value="1" />
+    </attr>
+    <attr name="viewAbove" format="reference" />
+    <attr name="viewBehind" format="reference" />
+    <attr name="behindOffset" format="dimension" />
+    <attr name="behindWidth" format="dimension" />
+    <attr name="behindScrollScale" format="float" />
+    <attr name="touchModeAbove">
+        <enum name="fullscreen" value="1" />
+        <enum name="margin" value="0" />
+    </attr>
+    <attr name="touchModeBehind">
+        <enum name="fullscreen" value="1" />
+        <enum name="margin" value="0" />
+    </attr>
+    <attr name="shadowDrawable" format="reference" />
+    <attr name="shadowWidth" format="dimension" />
+    <attr name="fadeEnabled" format="boolean" />
+    <attr name="fadeDegree" format="float" />
+    <attr name="selectorEnabled" format="boolean" />
+    <attr name="selectorDrawable" format="reference" />
+    <attr name="TabPageIndicatorStyle" format="reference" />
+    <attr name="draw_bg" format="boolean" />
+    <attr name="border_wide" format="integer" />
+    <attr name="border_color" format="color" />
+    <attr name="state_playing" format="boolean" />
+    <attr name="state_stoped" format="boolean" />
+    <attr name="state_volume" format="integer" />
+</resources>

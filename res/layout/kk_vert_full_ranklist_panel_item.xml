@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="55.0dip">
+        <FrameLayout android:id="@id/idx_layout" android:layout_width="26.0dip" android:layout_height="36.0dip" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true">
+            <ImageView android:id="@id/rank_idx_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/kk_vert_rank_1" android:scaleType="centerInside" android:layout_centerVertical="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/kk_text_black" android:gravity="center" android:id="@id/rank_idx_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="111" android:layout_centerVertical="true" />
+        </FrameLayout>
+        <com.melot.kkcommon.widget.CircleImageView android:id="@id/avatar" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/kk_default_avatar_big_men" android:layout_toRightOf="@id/idx_layout" android:layout_centerVertical="true" />
+        <com.melot.game.room.widget.LevelImageView android:id="@id/level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:scaleType="centerInside" android:layout_toRightOf="@id/avatar" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/kk_text_black" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Name" android:layout_toRightOf="@id/level" android:layout_centerVertical="true" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/kk_room_text_gray" android:id="@id/money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="money" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

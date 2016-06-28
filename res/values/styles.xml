@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="ActivityAnim" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/kk_activity_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/kk_activity_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/kk_activity_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/kk_activity_close_exit</item>
+        <item name="android:taskOpenEnterAnimation">@anim/kk_activity_open_enter</item>
+        <item name="android:taskOpenExitAnimation">@anim/kk_activity_open_exit</item>
+        <item name="android:taskCloseEnterAnimation">@anim/kk_activity_close_enter</item>
+        <item name="android:taskCloseExitAnimation">@anim/kk_activity_close_exit</item>
+        <item name="android:taskToFrontEnterAnimation">@anim/kk_activity_open_enter</item>
+        <item name="android:taskToFrontExitAnimation">@anim/kk_activity_open_exit</item>
+        <item name="android:taskToBackEnterAnimation">@anim/kk_activity_close_enter</item>
+        <item name="android:taskToBackExitAnimation">@anim/kk_activity_close_exit</item>
+    </style>
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+    <style name="KKGameCategoryPop" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/kk_game_category_pop_in</item>
+        <item name="android:windowExitAnimation">@anim/kk_game_category_pop_out</item>
+    </style>
+    <style name="KKRankListPopupAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/kk_rank_pop_push_top_in</item>
+        <item name="android:windowExitAnimation">@anim/kk_rank_pop_push_top_out</item>
+    </style>
+    <style name="KKRoomPopupColorAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/kk_room_pop_color_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/kk_room_pop_color_anim_out</item>
+    </style>
+    <style name="KKRoomPopupLoginAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/kk_plugin_room_pop_login_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/kk_plugin_room_pop_login_anim_out</item>
+    </style>
+    <style name="KKRoomPopupRightAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/kk_right_in</item>
+        <item name="android:windowExitAnimation">@anim/kk_right_out</item>
+    </style>
+    <style name="KKRoomPopupShareAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/kk_room_pop_share_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/kk_room_pop_share_anim_out</item>
+    </style>
+    <style name="KKRoomPopupShareHoriAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/kk_room_pop_hori_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/kk_room_pop_share_hori_anim_out</item>
+    </style>
+    <style name="KKvertfullDetailAnim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/kk_vertfull_detail_in</item>
+        <item name="android:windowExitAnimation">@anim/kk_vertfull_detail_out</item>
+    </style>
+    <style name="KKvertfullUserlistAnim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/kk_left_in</item>
+        <item name="android:windowExitAnimation">@anim/kk_left_out</item>
+    </style>
+    <style name="LoadingAnim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/kk_photoview_open_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/kk_activity_close_exit</item>
+    </style>
+    <style name="MatchDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="PageIndicatorDefaults" parent="@style/Theme.ActivityAnim">
+        <item name="TabPageIndicatorStyle">@style/SectionTabStyle</item>
+    </style>
+    <style name="PhotoViewAnim" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/kk_photoview_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/kk_photoview_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/kk_photoview_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/kk_photoview_close_exit</item>
+    </style>
+    <style name="ProgressBar_Mini" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">3.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:minHeight">3.0dip</item>
+    </style>
+    <style name="ScreenTextDialog">
+        <item name="android:windowBackground">@color/kk_background_white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="SectionTabStyle">
+        <item name="android:textAppearance">@style/textapperance</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/kk_section_text</item>
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">20.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="Theme.ActivityAnim" parent="@android:style/Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/ActivityAnim</item>
+    </style>
+    <style name="Theme.ContextMenuDialog" parent="@android:style/Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/KKRoomPopupColorAnimation</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Theme.KKDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Theme.KKGiftStarDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="Theme.KKRoom" parent="@android:style/Theme">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme.LoadingAnim" parent="@android:style/Theme">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/LoadingAnim</item>
+    </style>
+    <style name="Theme.PhotoViewAnim" parent="@android:style/Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/PhotoViewAnim</item>
+    </style>
+    <style name="Theme.PickDialog" parent="@android:style/Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Theme.PopuLayout" parent="@android:style/Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Theme.PublishDialog" parent="@android:style/Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowSoftInputMode">adjustNothing</item>
+    </style>
+    <style name="Theme.newerTutorialDialog" parent="@android:style/Theme">
+        <item name="android:windowBackground">@color/kk_app_color_black</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/kk_app_color_black</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="Transparent">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    <style name="activityTheme4SingleInstanse" parent="@android:style/Theme">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+    <style name="chatroom_show_roominfo_popur">
+        <item name="android:windowEnterAnimation">@anim/kk_chat_room_roominfo_down</item>
+        <item name="android:windowExitAnimation">@anim/kk_chat_room_roominfo_up</item>
+    </style>
+    <style name="customer_progress_dialog" parent="@android:style/Widget.ProgressBar">
+        <item name="android:fullDark">@drawable/kk_progress_dialog_bg</item>
+        <item name="android:topDark">@drawable/kk_progress_dialog_bg</item>
+        <item name="android:centerDark">@drawable/kk_progress_dialog_bg</item>
+        <item name="android:bottomDark">@drawable/kk_progress_dialog_bg</item>
+        <item name="android:fullBright">@drawable/kk_progress_dialog_bg</item>
+        <item name="android:topBright">@drawable/kk_progress_dialog_bg</item>
+        <item name="android:centerBright">@drawable/kk_progress_dialog_bg</item>
+        <item name="android:bottomBright">@drawable/kk_progress_dialog_bg</item>
+        <item name="android:bottomMedium">@drawable/kk_progress_dialog_bg</item>
+        <item name="android:centerMedium">@drawable/kk_progress_dialog_bg</item>
+        <item name="android:maxWidth">25.0dip</item>
+        <item name="android:maxHeight">25.0dip</item>
+        <item name="android:indeterminateDuration">1000</item>
+        <item name="android:minWidth">25.0dip</item>
+        <item name="android:minHeight">25.0dip</item>
+    </style>
+    <style name="kk_dialog_listpoupwindow" parent="@android:style/Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="kk_game_input_style">
+        <item name="android:textColor">@color/kk_text_gray_dark</item>
+        <item name="android:textColorHint">@color/kk_color_818181</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/kk_game_input_bg_selector</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="kk_room_coins">
+        <item name="android:textSize">@dimen/kk_room_redpackage_title_size</item>
+        <item name="android:textColor">@drawable/kk_bang_room_redpackage_coins_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/kk_bang_room_redpackage_coins</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="kk_view_marging_all" parent="@style/kk_view_marging_right">
+        <item name="android:layout_marginLeft">@dimen/kk_common_marrgin_left</item>
+    </style>
+    <style name="kk_view_marging_left">
+        <item name="android:layout_marginLeft">@dimen/kk_common_marrgin_left</item>
+    </style>
+    <style name="kk_view_marging_right">
+        <item name="android:layout_marginRight">@dimen/kk_common_marrgin_right</item>
+    </style>
+    <style name="kk_view_padding">
+        <item name="android:paddingLeft">@dimen/kk_common_marrgin_left</item>
+        <item name="android:paddingRight">@dimen/kk_common_marrgin_right</item>
+    </style>
+    <style name="payeco_applicationBgStyle">
+        <item name="android:background">#ffe8e8e8</item>
+    </style>
+    <style name="payeco_fullHeightDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="payeco_fullScreendialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="payeco_keyboardButton">
+        <item name="android:textSize">@dimen/payeco_pwkeyboard_button_textsize</item>
+        <item name="android:textColor">@color/payeco_textColorWhite</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/payeco_keyboard_btn1_background</item>
+        <item name="android:layout_width">70.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="payeco_keyboardDigitButton">
+        <item name="android:textSize">@dimen/payeco_pwkeyboard_button_textsize</item>
+        <item name="android:textColor">@color/payeco_textColorWhite</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/payeco_keyboard_btn_selector</item>
+        <item name="android:layout_width">0.0px</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="payeco_keyboardToastView">
+        <item name="android:textSize">@dimen/payeco_pwkeyboard_toast_textsize</item>
+        <item name="android:textColor">@color/payeco_textColorWhite</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/payeco_keyboard_toast_bg</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:layout_width">0.0px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="payeco_pluginButtonSingle">
+        <item name="android:textAppearance">?android:textAppearanceButton</item>
+        <item name="android:textSize">@dimen/payeco_button_textsize</item>
+        <item name="android:textColor">@color/payeco_textColorWhite</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/payeco_plugin_btnright_selector</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">42.0dip</item>
+        <item name="android:layout_marginLeft">40.0dip</item>
+        <item name="android:layout_marginRight">40.0dip</item>
+    </style>
+    <style name="payeco_pluginCancelButton">
+        <item name="android:textAppearance">?android:textAppearanceButton</item>
+        <item name="android:textSize">@dimen/payeco_button_textsize</item>
+        <item name="android:textColor">@color/payeco_textColorWhite</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/payeco_plugin_btnleft_selector</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">42.0dip</item>
+        <item name="android:layout_marginRight">8.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="payeco_pluginConfirmButton">
+        <item name="android:textAppearance">?android:textAppearanceButton</item>
+        <item name="android:textSize">@dimen/payeco_button_textsize</item>
+        <item name="android:textColor">@color/payeco_textColorWhite</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/payeco_plugin_btnright_selector</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">42.0dip</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="payeco_pluginNormalEditText">
+        <item name="android:textSize">@dimen/payeco_normal_textsize</item>
+        <item name="android:textColor">@color/payeco_textColorBlack</item>
+        <item name="android:textColorHint">@color/payeco_hintTextColor</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="payeco_pluginNormalInputLayout">
+        <item name="android:background">@drawable/payeco_pay_input</item>
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:clickable">true</item>
+        <item name="android:addStatesFromChildren">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+    </style>
+    <style name="payeco_pluginNormalLayout">
+        <item name="android:background">@drawable/payeco_plugin_common_info_bg</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingTop">7.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="payeco_pluginNormalText">
+        <item name="android:textSize">@dimen/payeco_normal_textsize</item>
+        <item name="android:textColor">@color/payeco_textColorBlack</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="payeco_pluginNormalText2">
+        <item name="android:textSize">@dimen/payeco_normal_textsize</item>
+        <item name="android:textColor">@color/payeco_textColorBlack</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+    </style>
+    <style name="payeco_pluginNormalUnInputLayout">
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:clickable">true</item>
+        <item name="android:addStatesFromChildren">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+    </style>
+    <style name="payeco_pluginPasswordButton">
+        <item name="android:textSize">@dimen/payeco_pwkeyboard_button_textsize</item>
+        <item name="android:textColor">@color/payeco_textColorBlack</item>
+        <item name="android:textColorHint">@color/payeco_textColorGrayTwo</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:password">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="payeco_pluginTitleLayout">
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="payeco_pluginTitleText">
+        <item name="android:textSize">@dimen/payeco_small_textsize</item>
+        <item name="android:textColor">@color/payeco_titleTextColor</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="personalVideo.SeekBar.lan" parent="@android:style/Widget.SeekBar">
+        <item name="android:maxHeight">5.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/kk_video_lan_seekbar</item>
+        <item name="android:minHeight">5.0dip</item>
+        <item name="android:thumb">@drawable/kk_video_lan_seekbar_thumb</item>
+        <item name="android:thumbOffset">2.0dip</item>
+    </style>
+    <style name="personalVideo.SeekBar.v" parent="@android:style/Widget.SeekBar">
+        <item name="android:maxHeight">2.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/kk_video_v_seekbar</item>
+        <item name="android:minHeight">2.0dip</item>
+        <item name="android:thumb">@drawable/kk_video_v_seekbar_thumb</item>
+        <item name="android:thumbOffset">1.0dip</item>
+    </style>
+    <style name="text_search">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff818181</item>
+        <item name="android:background">@drawable/kk_search_world_selector</item>
+        <item name="android:paddingLeft">14.0dip</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:paddingRight">14.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:layout_marginBottom">15.0dip</item>
+    </style>
+    <style name="textapperance">
+        <item name="android:textColor">@drawable/kk_section_tab_text_selected</item>
+    </style>
+    <style name="theme.customer_progress_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:alertDialogStyle">@style/customer_progress_dialog</item>
+        <item name="android:progressBarStyle">@style/customer_progress_dialog</item>
+        <item name="android:progressBarStyleSmall">@style/customer_progress_dialog</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingLeft">4.0dip</item>
+        <item name="android:paddingRight">4.0dip</item>
+    </style>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/kk_me_new_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/history_listview" android:paddingTop="11.0dip" android:scrollbars="none" android:fadingEdge="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@color/kk_match_uncometitle" android:dividerHeight="1.0px" />
+    <LinearLayout android:orientation="vertical" android:id="@id/none_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/kk_text_normal_size" android:textColor="@color/kk_text_gray" android:layout_gravity="center_horizontal" android:id="@id/none_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.melot.kkcommon.widget.AnimProgressBar android:id="@id/progress" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/Widget.ProgressBar.Inverse" />
+    </LinearLayout>
+</RelativeLayout>

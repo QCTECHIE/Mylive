@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rootview" android:background="@color/kk_game_main_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/top_view" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <include android:id="@id/more_setting_title" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/kk_bang_title_bar" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/kk_text_white" android:layout_width="fill_parent" android:layout_height="90.0dip">
+        <TextView android:textSize="@dimen/kk_text_small_size" android:textColor="@color/kk_props_text_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/bang_exchange_ticket_balance" />
+        <com.melot.kkcommon.widget.NumAnimView android:textSize="@dimen/kk_bang_income" android:textColor="@color/kk_bang_income" android:id="@id/bang_ticket_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bang_exchange_main" android:background="@color/kk_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="4.0dip">
+        <GridView android:id="@id/bang_ticket_item_grid" android:background="@color/kk_white" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:numColumns="2" />
+        <Button android:textSize="@dimen/kk_text_normal_size" android:textColor="@color/kk_background_black" android:gravity="center" android:id="@id/bang_ticket_exchange_btn" android:background="@drawable/kk_change_btn" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="10.0dip" android:text="@string/bang_exchange_to_kk" />
+        <TextView android:textSize="@dimen/kk_text_small_size" android:textColor="@color/kk_text_gray" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/bang_ticket_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/bang_exchange_warn" />
+    </LinearLayout>
+</LinearLayout>

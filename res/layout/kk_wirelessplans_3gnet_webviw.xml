@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root_view" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/top_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/wirelessplans_3gnet_webview_title" layout="@layout/kk_title_bar" />
+    </LinearLayout>
+    <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_view" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loading_view" android:focusable="false" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ProgressBar android:id="@id/progress_center" android:layout_width="@dimen/kk_progress_size_fullscreen" android:layout_height="@dimen/kk_progress_size_fullscreen" style="@android:style/Widget.ProgressBar.Inverse" />
+        <TextView android:textColor="@color/kk_app_color_black" android:id="@id/error_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kk_loading" />
+    </LinearLayout>
+    <ImageView android:id="@id/web_error_image" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/kk_web_error" android:scaleType="centerInside" android:layout_centerInParent="true" android:contentDescription="@null" />
+</RelativeLayout>

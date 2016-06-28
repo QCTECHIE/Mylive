@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/loading_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/loading_retry" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <TextView android:textColor="@color/kk_app_color_light_gray" android:id="@id/laodint_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="95.0dip" android:layout_centerHorizontal="true" />
+</RelativeLayout>

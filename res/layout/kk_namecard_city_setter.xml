@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/name_card_city_setter_root" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/top_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/name_card_city_setter_title" layout="@layout/kk_bang_title_bar" />
+    </LinearLayout>
+    <ExpandableListView android:id="@android:id/list" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/kk_game_room_color_list_selector" android:cacheColorHint="@android:color/transparent" android:groupIndicator="@drawable/kk_group_indicator" android:childDivider="@drawable/kk_divider" android:divider="@drawable/kk_divider" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background" android:drawable="@drawable/kk_room_namecard_pregress_bg" />
+    <item android:id="@android:id/progress">
+        <clip>
+            <nine-patch android:src="@drawable/kk_room_namecard_pregress_progress" />
+        </clip>
+    </item>
+</layer-list>

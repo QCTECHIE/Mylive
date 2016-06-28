@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root_view" android:background="@color/kk_game_main_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/top_view" android:background="@color/kk_game_main_gray" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/kk_game_text_black" android:ellipsize="end" android:gravity="center" android:id="@id/kk_title_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/kk_namecard_title" android:singleLine="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/left_bt" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/kk_game_title_back_icon_normal" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:onClick="onBack" />
+        <Button android:textSize="15.0sp" android:textColor="@color/kk_game_text_black" android:gravity="center" android:id="@id/btn_attention" android:background="@android:color/transparent" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/main_attention" android:layout_alignParentRight="true" android:onClick="onAttention" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/person_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top_view">
+        <LinearLayout android:orientation="vertical" android:id="@id/topbar" android:background="@color/kk_background_white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.melot.kkcommon.widget.CircleImageView android:id="@id/avatar" android:clickable="true" android:layout_width="63.0dip" android:layout_height="63.0dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/kk_me_default_head_sculpture" android:onClick="onAvatarClick" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/kk_game_text_black" android:ellipsize="end" android:id="@id/nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:singleLine="true" />
+                        <com.melot.game.room.widget.LevelImageView android:id="@id/me_level_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/kk_game_text_gray_dark" android:id="@id/fanscount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/kk_game_text_gray_dark" android:id="@id/showtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                    </LinearLayout>
+                    <TextView android:textSize="12.0sp" android:textColor="@color/kk_game_my_card_certified" android:id="@id/certified" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="认证：啊啊啊啊啊" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:textSize="13.0sp" android:textColor="@color/kk_game_text_black" android:gravity="center" android:id="@id/top_tab_layout" android:background="@drawable/kk_game_bg_btn_common" android:layout_width="fill_parent" android:layout_height="33.0dip" android:layout_marginLeft="17.0dip" android:layout_marginRight="17.0dip" android:layout_marginBottom="20.0dip" android:text="@string/kk_enter_room" android:onClick="roomEnterClick" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/tab_layout" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="37.0dip" android:layout_below="@id/topbar">
+            <LinearLayout android:orientation="horizontal" android:id="@id/tab_bar" android:layout_width="fill_parent" android:layout_height="33.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/kk_game_text_black" android:gravity="center" android:id="@id/kk_namecard_info" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/kk_namecard_info" android:layout_weight="1.0" />
+                <View android:layout_gravity="center" android:background="@color/kk_game_main_gray" android:layout_width="1.0dip" android:layout_height="16.0dip" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/kk_game_text_gray" android:gravity="center" android:id="@id/kk_namecard_ranklist" android:layout_width="0.0dip" android:layout_height="33.0dip" android:text="@string/kk_namecard_ranklist" android:layout_weight="1.0" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_below="@id/tab_bar">
+                <View android:id="@id/tab_view" android:background="@color/kk_game_text_black" android:visibility="visible" android:layout_width="76.0dip" android:layout_height="fill_parent" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/tab_layout" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/content_layout" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/opr_line" android:layout_below="@id/person_layout" />
+    <View android:id="@id/opr_line" android:background="@color/kk_match_uncometitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/opr_layout" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/opr_layout" android:background="@color/kk_background_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true">
+        <Button android:gravity="center" android:id="@id/btn_chat" android:background="@drawable/me_table_bg_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/kk_namecard_chat" android:layout_weight="1.0" android:onClick="onChat" />
+        <View android:background="@color/kk_match_uncometitle" android:layout_width="1.0dip" android:layout_height="25.0dip" />
+        <Button android:gravity="center" android:id="@id/btn_attention1" android:background="@drawable/me_table_bg_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/main_attention" android:layout_weight="1.0" android:onClick="onAttention" />
+        <View android:background="@color/kk_match_uncometitle" android:layout_width="1.0dip" android:layout_height="25.0dip" />
+        <Button android:gravity="center" android:id="@id/btn_shield" android:background="@drawable/me_table_bg_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/kk_namecard_shield" android:layout_weight="1.0" android:onClick="onShield" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/room_top_bar_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/top_exit_btn" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="15.0dip" android:src="@drawable/kk_plugin_room_userinfo_pop_exit_bnt_bg" android:scaleType="centerInside" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:onClick="onRoomExitBtnClick" />
+        <include android:id="@id/info_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" layout="@layout/kk_vertfull_info" />
+        <com.melot.game.room.bang.vert.RoomMemberHlist android:id="@id/kk_game_this_rank" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="44.0dip" android:layout_toRightOf="@id/info_layout" />
+    </RelativeLayout>
+</RelativeLayout>

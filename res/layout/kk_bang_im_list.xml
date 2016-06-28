@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/kk_wechat_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="@color/transparent" android:divider="@color/kk_wechat_background" android:dividerHeight="1.0px" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_bang_im_empty" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/kk_app_tips_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/kk_bang_im_empty_tip" />
+    </LinearLayout>
+</FrameLayout>

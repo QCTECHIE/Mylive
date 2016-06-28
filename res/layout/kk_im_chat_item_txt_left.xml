@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/chat_item_txt_left_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/time_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_centerHorizontal="true" layout="@layout/kk_im_chat_item_time" />
+    <RelativeLayout android:id="@id/txt_left_view" android:paddingLeft="11.0dip" android:paddingRight="45.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/time_layout">
+        <com.melot.kkcommon.widget.CircleImageView android:id="@id/portital" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="6.0dip" android:src="@drawable/kk_me_default_head_sculpture" />
+        <TextView android:textSize="12.0sp" android:textColor="#ff818181" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:text="Name" android:layout_toRightOf="@id/portital" android:layout_alignTop="@id/portital" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/txt_ly" android:background="@drawable/kk_im_msg_txtbg_left" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="5.0dip" android:layout_toRightOf="@id/portital" android:layout_below="@id/name">
+            <com.melot.kkcommon.room.chat.ChatItemView android:textSize="16.0sp" android:textColor="#ff474747" android:gravity="left" android:id="@id/txt" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="txt" android:lineSpacingExtra="4.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

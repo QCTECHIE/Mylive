@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/top_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/redpacket_acty_title" layout="@layout/kk_meshow_title_bar" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/tab_layout" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_below="@id/top_view">
+        <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_bang_red_package_orange" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/send_redpacket" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/kk_send_redpacket" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_text_black" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/redpacket_history" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/kk_redpacket_history" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/cursor_view" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/tab_layout">
+        <ImageView android:id="@id/cursor" android:background="@color/kk_bang_red_package_orange" android:layout_width="75.0dip" android:layout_height="4.0dip" android:scaleType="fitXY" android:contentDescription="@null" />
+    </LinearLayout>
+    <View android:id="@id/title_line" android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/cursor_view" />
+    <android.support.v4.view.ViewPager android:id="@id/viewPager" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_line" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.melot.kkcommon.widget.KeyboardPopLayout android:gravity="bottom" android:id="@id/layout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/editlayout" android:background="@color/kk_vert_full_edit_bg_color" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <EditText android:textSize="@dimen/kk_text_small_size" android:textColor="@color/kk_text_white" android:textColorHint="#ff818181" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/gift_num" android:background="@drawable/kk_vert_full_edit" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:layout_width="0.0dip" android:layout_height="31.0dip" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" android:hint="@string/kk_room_gift_num_hint" android:maxLength="4" android:layout_weight="1.0" android:inputType="number" />
+            <Button android:textSize="@dimen/kk_text_dialog_size" android:textColor="@color/kk_btn_a_selector" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/gift_sure" android:background="@drawable/kk_btn_a_selector" android:layout_width="65.0dip" android:layout_height="31.0dip" android:layout_marginRight="11.0dip" android:text="@string/kk_ok" />
+        </LinearLayout>
+    </LinearLayout>
+</com.melot.kkcommon.widget.KeyboardPopLayout>

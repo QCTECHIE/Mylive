@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layout_nav_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/layout_root" android:background="@drawable/kk_bar_background" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/id_tab_liveroom" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:id="@id/id_tab_liveroom_img" android:background="#00000000" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_tab_hotscreen_unselected" />
+        </LinearLayout>
+        <View android:layout_width="54.0dip" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/id_tab_discover" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:id="@id/id_tab_discover_img" android:background="#00000000" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_tab_find_unselected" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/id_tab_fast_live" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/img_fast_live" android:background="@android:color/transparent" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_fast_live_selector" android:scaleType="fitCenter" />
+    </LinearLayout>
+</FrameLayout>

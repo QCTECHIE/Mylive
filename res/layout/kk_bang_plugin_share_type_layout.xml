@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/kk_bang_plugin_share_pop_layout_bg" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="138.0dip">
+        <TextView android:textSize="@dimen/kk_text_11_size" android:textColor="@color/kk_background_black" android:id="@id/pop_share_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/share_label_text" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/share_group_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="15.0dip" android:layout_below="@id/pop_share_tip">
+            <ImageView android:id="@id/weibo_share" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/kk_bang_plugin_pop_share_weibo_icon" android:layout_weight="1.0" />
+            <ImageView android:id="@id/weixin_share_friend" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/kk_bang_plugin_pop_share_wechat_friend_icon" android:layout_weight="1.0" />
+            <ImageView android:id="@id/weixin_share_circle" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/kk_bang_plugin_pop_share_wechat_circle_icon" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/share_group_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/share_group_1">
+            <ImageView android:id="@id/qq_share" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/kk_bang_plugin_pop_share_qq_friend_icon" android:layout_weight="1.0" />
+            <ImageView android:id="@id/qqZone_share" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/kk_bang_plugin_pop_share_qq_zone_icon" android:layout_weight="1.0" />
+            <ImageView android:id="@id/url_copy" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/kk_bang_plugin_pop_share_copy_icon" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/user_resetpw_root" android:background="@color/kk_game_main_gray" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/uer_content_view" android:layout_width="fill_parent" android:layout_height="323.0dip">
+        <LinearLayout android:id="@id/top_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/user_resetpw_title" layout="@layout/kk_bang_title_bar" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/eidt_delete_l_view" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="55.0dip">
+            <EditText android:textSize="13.0sp" android:textColor="@color/kk_game_text_black" android:textColorHint="@color/kk_game_cata" android:id="@id/edit_input_pwd" android:background="@android:color/transparent" android:paddingLeft="10.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/tips_new_password" android:maxLength="16" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/btn_delete_pwd" android:background="@color/transparent" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/btndelete_selector" android:scaleType="centerInside" />
+            <ImageButton android:gravity="center" android:id="@id/is_show_password" android:background="@android:color/transparent" android:paddingLeft="5.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/kk_merger_enroll_show_btn" />
+        </LinearLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/kk_game_cata" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="14.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/more_rest_password_tip" />
+        <Button android:enabled="false" android:textSize="14.0sp" android:textColor="@color/kk_color_login_selector" android:gravity="center" android:id="@id/submit_button" android:background="@drawable/button_login_new_selector" android:layout_width="197.0dip" android:layout_height="40.0dip" android:layout_marginTop="66.0dip" android:text="@string/task_verify_complete" />
+    </LinearLayout>
+</ScrollView>

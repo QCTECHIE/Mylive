@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/pop_view_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/rootfirst" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/kk_view_foreground_bg">
+        <RelativeLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/pinkline" android:background="@color/kk_standard_orange" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <TextView android:textSize="@dimen/kk_text_large_size" android:textColor="@color/kk_ff8400" android:gravity="center" android:id="@id/delete" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/kk_clear_viewed_history" android:layout_below="@id/pinkline" />
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/rootsecond" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/kk_view_foreground_bg">
+        <RelativeLayout android:id="@id/lineimage_root" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/lineimage" android:background="@color/kk_pick_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textSize="@dimen/kk_text_large_size" android:textColor="@color/kk_app_background_gray" android:gravity="center" android:id="@id/cancel" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/kk_cancel" android:layout_below="@id/lineimage" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

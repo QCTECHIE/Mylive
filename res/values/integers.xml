@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="kk_activity_anim_dura">450</integer>
+    <integer name="kk_anim_in_room">250</integer>
+    <integer name="kk_photoview_anim_dura">350</integer>
+    <integer name="kk_room_chat_bar_anim_in_dura">300</integer>
+    <integer name="kk_room_chat_bar_anim_out_dura">500</integer>
+    <integer name="volume1">1</integer>
+    <integer name="volume2">2</integer>
+    <integer name="volume3">3</integer>
+</resources>

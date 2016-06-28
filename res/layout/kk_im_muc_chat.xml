@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root" android:background="#ffe7e7e7" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/top_bar" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/top_view" android:background="@color/kk_title_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/left_bt" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_game_back_btn" android:onClick="onBack" />
+            <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/operation" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="@color/kk_game_text_black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/kk_title_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="title" android:singleLine="true" android:layout_centerInParent="true" />
+                <ProgressBar android:id="@id/progress" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginRight="4.0dip" android:layout_toLeftOf="@id/kk_title_text" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/right_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_im_group_card_selector" android:scaleType="centerInside" android:onClick="onGroupInfoClick" />
+        </LinearLayout>
+        <ImageView android:id="@id/kk_game_title_bar_separate_line" android:background="#ffd1d1d1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <include android:id="@id/bottom_view" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/kk_im_chat_bottom_layout" />
+    <com.melot.meshow.news.chat.ChatListView android:id="@id/list" android:background="#ffe7e7e7" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:transcriptMode="disabled" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:layout_above="@id/bottom_view" android:layout_below="@id/top_bar" />
+</RelativeLayout>

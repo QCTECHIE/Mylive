@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/back_btn" android:background="@color/kk_background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/top_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/payment_mothod_title" layout="@layout/kk_bang_title_bar" />
+    </LinearLayout>
+    <ScrollView android:id="@id/payment_scroll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top_view">
+        <LinearLayout android:orientation="vertical" android:id="@id/pay_methods" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/kktv_activity_textsize" android:textColor="#ff848383" android:id="@id/selectPayment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="16.0dip" android:text="@string/select_payment_type" />
+            <ImageButton android:gravity="center" android:layout_gravity="center" android:id="@id/wechat_btn" android:background="@drawable/kk_payment_method_btn" android:visibility="visible" android:layout_width="252.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/recharge_weixing_icon" android:onClick="onWeChat" android:contentDescription="@string/fill_money_wechat" />
+            <ImageButton android:gravity="center" android:layout_gravity="center" android:id="@id/alipay_btn" android:background="@drawable/kk_payment_method_btn" android:layout_width="252.0dip" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:src="@drawable/kk_fill_money_alipay_icon" android:onClick="onAlipayClick" android:contentDescription="@string/select_payment_shenzhoufu" />
+            <ImageButton android:gravity="center" android:layout_gravity="center" android:id="@id/payeco_btn" android:background="@drawable/kk_payment_method_btn" android:layout_width="252.0dip" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:src="@drawable/kk_payment_payeco" android:onClick="onPayecosClick" android:contentDescription="@string/fill_money_payeco" />
+            <ImageButton android:gravity="center" android:layout_gravity="center" android:id="@id/shenzhoufu_btn" android:background="@drawable/kk_payment_method_btn" android:layout_width="252.0dip" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:src="@drawable/kk_payment_shenzhoufu" android:onClick="onShenzhoufu" android:contentDescription="@string/select_payment_shenzhoufu" />
+            <ImageButton android:gravity="center" android:layout_gravity="center" android:id="@id/unionpay_btn" android:background="@drawable/kk_payment_method_btn" android:layout_width="252.0dip" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:src="@drawable/kk_payment_cup" android:onClick="onUnionPay" android:contentDescription="@string/select_payment_cup" />
+            <ImageButton android:gravity="center" android:layout_gravity="center" android:id="@id/unicompay_btn" android:background="@drawable/kk_payment_method_btn" android:layout_width="252.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/kk_payment_chinaunicom" android:onClick="onChinaUnicom" android:contentDescription="@string/select_payment_chinaunicom" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

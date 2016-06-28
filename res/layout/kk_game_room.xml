@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/game_room_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.melot.kkcommon.room.flyway.MarqueeView android:id="@id/flyway" android:background="@color/kk_black_50" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="29.0dip" app:bg_alpha="10" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/kk_vert_full_horn_color" android:id="@id/horn" android:paddingLeft="12.0dip" android:paddingTop="3.0dip" android:paddingRight="12.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="49.0dip" android:maxWidth="480.0dip" android:maxLines="2" android:shadowColor="@color/kk_black_50" android:shadowRadius="1.0" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <com.melot.kkcommon.widget.WatermarkView android:id="@id/logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_marginRight="11.0dip" android:layout_alignParentRight="true" />
+    <master.flame.danmaku.ui.widget.DanmakuView android:id="@id/sv_danmaku" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="29.0dip" />
+    <com.melot.game.room.GiftShowLayout android:orientation="vertical" android:id="@id/gift_show" android:layout_width="wrap_content" android:layout_height="210.0dip" android:layout_marginTop="125.0dip">
+        <include android:id="@id/item1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/kk_room_gift_show_item" />
+        <include android:id="@id/item2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/kk_room_gift_show_item" />
+        <include android:id="@id/item3" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/kk_room_gift_show_item" />
+    </com.melot.game.room.GiftShowLayout>
+    <include android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/kk_video_loading_view" />
+    <ViewStub android:id="@id/room_error_stub" android:layout="@layout/kk_room_closed_error" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/room_end_video_stub_hori" android:layout="@layout/kk_room_end_video_hori" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.melot.game.room.HDVideoGiftLayout android:id="@id/hd_gift_layout" android:visibility="gone" android:layout_width="290.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    <TextView android:textSize="@dimen/kk_text_normal_size" android:textColor="@color/kk_text_white" android:gravity="center" android:id="@id/gift_win_view" android:background="@drawable/kk_room_gift_win_bg" android:layout_width="wrap_content" android:layout_height="20.0dip" android:text="@string/kk_room_gift_win_get" android:singleLine="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <RelativeLayout android:gravity="center" android:id="@id/giftpop" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <View android:background="@drawable/kk_room_send_gift_hd_bg" android:layout_width="200.0dip" android:layout_height="77.0dip" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="200.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <ImageView android:id="@id/gift_one" android:clickable="false" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginLeft="18.0dip" android:scaleType="fitXY" />
+            <ImageView android:id="@id/gift_two" android:clickable="false" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginLeft="25.0dip" android:scaleType="fitXY" />
+            <ImageView android:id="@id/gift_three" android:clickable="false" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginLeft="25.0dip" android:scaleType="fitXY" />
+        </LinearLayout>
+        <ProgressBar android:id="@id/loading_progress" android:layout_width="30.0dip" android:layout_height="30.0dip" android:indeterminateDrawable="@drawable/kk_progress_dialog_game" android:indeterminateDuration="900" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/room_top_bar_layout_hd" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/room_top_bar_hd" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/room_top_status_bar_hd" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include android:id="@id/room_mode_hdvideo_title" layout="@layout/kk_status_bar" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/room_top_bar_hd_sub" android:background="@color/kk_transparent_70" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_below="@id/room_top_status_bar_hd">
+                <ImageView android:id="@id/back_btn_hd" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/kk_room_topbar_hd_back" android:scaleType="centerInside" />
+                <View android:id="@id/right_view" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_alignParentRight="true" />
+                <ImageView android:id="@id/hd_switch_icon" android:visibility="visible" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/kk_room_more_icon" android:scaleType="centerInside" android:layout_toLeftOf="@id/right_view" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/room_top_bar_share_icon" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/kk_room_share_icon" android:scaleType="centerInside" android:layout_toLeftOf="@id/hd_switch_icon" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/kk_background_white" android:ellipsize="end" android:gravity="center" android:id="@id/top_bar_name_hd" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:singleLine="true" android:layout_toRightOf="@id/back_btn_hd" />
+                <ImageView android:id="@id/topbar_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:src="@drawable/kk_video_hd_topbar_line" android:layout_toRightOf="@id/top_bar_name_hd" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/topbar_p" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/kk_video_hd_topbar_people" android:layout_toRightOf="@id/topbar_line" android:layout_centerVertical="true" />
+                <TextView android:textSize="14.0dip" android:textColor="#ffdadada" android:id="@id/topbar_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="0" android:layout_toRightOf="@id/topbar_p" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/video_level_switchlist" android:visibility="gone" android:layout_width="112.0dip" android:layout_height="133.0dip" android:layout_marginTop="73.0dip" android:layout_marginRight="11.0dip" android:layout_alignParentRight="true">
+        <TextView android:textSize="@dimen/kk_text_normal_size" android:textColor="#ff939393" android:gravity="center_vertical" android:background="@drawable/kk_room_more_list_bg_1" android:paddingLeft="13.0dip" android:layout_width="112.0dip" android:layout_height="29.0dip" android:text="@string/kk_room_video_level_str" />
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/kk_room_more_list_bg_2" android:layout_width="112.0dip" android:layout_height="29.0dip">
+            <TextView android:textSize="@dimen/kk_text_dialog_size" android:textColor="@color/kk_game_orange" android:gravity="center" android:id="@id/video_level_hd" android:layout_width="56.0dip" android:layout_height="29.0dip" android:text="@string/kk_room_video_level_high" />
+            <TextView android:textSize="@dimen/kk_text_dialog_size" android:textColor="@color/kk_text_white" android:gravity="center" android:id="@id/video_level_common" android:layout_width="56.0dip" android:layout_height="29.0dip" android:text="@string/kk_room_video_level_common" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/kk_text_normal_size" android:textColor="#ff939393" android:gravity="center_vertical" android:background="@drawable/kk_room_more_list_bg_3" android:paddingLeft="13.0dip" android:layout_width="112.0dip" android:layout_height="29.0dip" android:text="@string/kk_room_video_decode_str" />
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/kk_room_more_list_bg_4" android:layout_width="112.0dip" android:layout_height="29.0dip">
+            <TextView android:textSize="@dimen/kk_text_dialog_size" android:gravity="center" android:id="@id/video_level_soft" android:layout_width="56.0dip" android:layout_height="29.0dip" android:text="@string/kk_room_video_level_soft" />
+            <TextView android:textSize="@dimen/kk_text_dialog_size" android:gravity="center" android:id="@id/video_level_hard" android:layout_width="56.0dip" android:layout_height="29.0dip" android:text="@string/kk_room_video_level_hard" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="bottom" android:id="@id/danma_controller_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:gravity="center_vertical" android:background="@color/kk_transparent_70" android:paddingLeft="81.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="vertical" android:id="@id/info_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="6.0dip">
+                <TextView android:textSize="17.0sp" android:textColor="@color/kk_text_white" android:id="@id/nick" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/kk_text_white" android:id="@id/idstr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/btn_danma_subscription_layout" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="80.0dip" android:layout_toRightOf="@id/info_layout">
+                <ImageView android:id="@id/btn_danma_subscription_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:src="@drawable/kk_room_subscription_off_hd" android:scaleType="center" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="@dimen/kk_text_small_size" android:textColor="@color/kk_text_white" android:id="@id/btn_danma_subscription_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kk_add_follow" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/gift_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+                <RelativeLayout android:orientation="vertical" android:id="@id/hd_send_gift" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="22.0dip">
+                    <ImageView android:id="@id/hd_send_gift_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/kk_room_bottombar_hd_gift" />
+                    <TextView android:textSize="@dimen/kk_text_small_size" android:textColor="@color/kk_text_white" android:id="@id/hd_send_gift_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kk_room_add_gift" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/btn_danma_controller_layout" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="16.0dip" android:layout_toLeftOf="@id/gift_layout">
+                <ImageView android:id="@id/btn_danma_controller_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0px" android:src="@drawable/kk_danma_open" />
+                <TextView android:textSize="@dimen/kk_text_small_size" android:textColor="@color/kk_text_white" android:id="@id/btn_danma_controller_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kk_danma_open" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/btn_danma_chat_layout" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/btn_danma_controller_layout">
+                <ImageView android:id="@id/btn_danma_chat_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:src="@drawable/kk_danma_chat" />
+                <TextView android:textSize="@dimen/kk_text_small_size" android:textColor="@color/kk_text_white" android:id="@id/btn_danma_chat_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kk_danma_send" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <com.melot.kkcommon.widget.CircleImageView android:id="@id/avatar" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginLeft="18.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

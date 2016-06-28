@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/photo_view_item_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.melot.kkcommon.util.imageviewer.PhotoView android:id="@id/img" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <RelativeLayout android:id="@id/loading_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/default_img" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_photoview_default_img" android:scaleType="fitCenter" android:contentDescription="@null" />
+        <LinearLayout android:gravity="center" android:id="@id/progress_view" android:paddingTop="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/default_img" android:layout_alignLeft="@id/default_img" android:layout_alignRight="@id/default_img">
+            <ProgressBar android:id="@id/progress" android:visibility="visible" android:layout_width="@dimen/kk_progress_size_in_list_item" android:layout_height="@dimen/kk_progress_size_in_list_item" android:layout_marginRight="15.0dip" style="@android:style/Widget.ProgressBar.Inverse" />
+            <TextView android:textColor="@color/kk_background_white" android:id="@id/err_txt" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kk_loading" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

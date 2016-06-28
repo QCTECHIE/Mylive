@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/anchor_info" android:background="@color/kk_me_background" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginTop="7.0dip" />
+    <FrameLayout android:id="@id/mainView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="7.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/anchor_info">
+        <ListView android:id="@id/list" android:background="@color/kk_background_white" android:scrollbars="none" android:fadingEdge="none" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@color/transparent" android:dividerHeight="0.0px" />
+        <TextView android:textSize="@dimen/kk_text_dialog_size" android:textColor="@color/kk_black_100" android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/no_income" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kk_bang_rank_zero_gift" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/user_info" android:background="@color/kk_me_background" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginTop="7.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/kk_bang_giftpop_item_selector" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/pop_gift_item_root" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/gift_thumb" android:layout_width="68.0dip" android:layout_height="56.0dip" android:layout_marginTop="7.0dip" android:src="@drawable/kk_room_gift_belong_mask" android:scaleType="fitCenter" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+        <ImageView android:id="@id/gift_thumb_mask" android:layout_width="68.0dip" android:layout_height="56.0dip" android:src="@drawable/kk_room_gift_belong_mask" android:scaleType="fitCenter" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+        <TextView android:textSize="8.0sp" android:textColor="#ffbababa" android:gravity="center" android:id="@id/gift_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:lines="1" android:layout_below="@id/gift_thumb" />
+        <TextView android:textSize="8.0sp" android:textColor="@color/kk_text_white" android:gravity="center" android:id="@id/gift_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:layout_below="@id/gift_name" />
+    </RelativeLayout>
+</RelativeLayout>

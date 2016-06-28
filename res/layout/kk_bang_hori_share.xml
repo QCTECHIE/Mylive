@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rootview" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/sharetitlelayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="@color/kk_text_gray" android:gravity="left" android:id="@id/sharetext_top" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/kk_share_to" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/pop_share_frist_raw_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="15.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/pop_share_view1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/weixin_share_friend" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/kk_share_weixin_friend" android:scaleType="centerInside" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/kk_text_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/kk_room_share_weixin_friend" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/pop_share_view2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/weixin_share_circle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/kk_share_weixin_circle" android:scaleType="centerInside" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/kk_text_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/kk_room_share_weixin_circle" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/pop_share_view5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/qq_share" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/kk_share_qq" android:scaleType="centerInside" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/kk_text_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/kk_room_share_qq" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/pop_share_view3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/qqZone_share" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/kk_share_qqkj" android:scaleType="centerInside" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/kk_text_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/kk_room_share_qqkj" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/pop_share_view4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/weibo_share" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/kk_share_weibo" android:scaleType="centerInside" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/kk_text_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/kk_room_share_weibo" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/pop_share_view6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/url_copy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/kk_share_quick_link" android:scaleType="centerInside" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/kk_text_gray" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/kk_room_share_quick_link" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/pop_share_line" android:background="@drawable/kk_rank_list_devider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/cancel" />
+    <Button android:textSize="20.0sp" android:textColor="@color/kk_room_text_gray" android:gravity="center" android:id="@id/cancel_btn" android:background="@color/kk_background_white" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="51.0dip" android:text="@string/kk_cancel" android:onClick="cancelClick" />
+</LinearLayout>

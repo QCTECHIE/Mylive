@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/attention_root" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/top_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/attention_title" layout="@layout/kk_bang_title_bar" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/follow_follows_attention" android:background="@color/kk_me_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/linearLayout1" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_news_notify_bnt" android:gravity="center" android:id="@id/follow_attention" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/my_attention_follow" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_room_text_gray" android:gravity="center" android:id="@id/manage_attention" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/my_attention_manage" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/cursor_view" android:layout_width="fill_parent" android:layout_height="2.0dip">
+            <ImageView android:id="@id/cursor" android:background="@drawable/kk_my_myattention_line" android:layout_width="75.0dip" android:layout_height="4.0dip" android:scaleType="fitXY" />
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v4.view.ViewPager android:id="@id/viewPager" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

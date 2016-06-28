@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/kk_me_new_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/root_ll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="11.0dip" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_room_text_black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:text="@string/kk_redpacket_total_amount" />
+                <EditText android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_room_text_black" android:textColorHint="@color/kk_app_tips_text" android:ellipsize="end" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/redpacket_money" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:singleLine="true" android:layout_weight="1.0" android:inputType="number" />
+                <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_room_text_black" android:layout_gravity="center_vertical" android:id="@id/xiubi_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dip" android:text="@string/kk_bang_red_package_money_unit" />
+            </LinearLayout>
+            <View android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="horizontal" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="49.0dip">
+                <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_room_text_black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:text="@string/kk_redpacket_num" />
+                <EditText android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_room_text_black" android:textColorHint="@color/kk_app_tips_text" android:ellipsize="end" android:gravity="right" android:layout_gravity="center_vertical" android:id="@id/redpacket_num" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:singleLine="true" android:maxLength="5" android:layout_weight="1.0" android:inputType="number" />
+                <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_room_text_black" android:layout_gravity="center_vertical" android:id="@id/ge_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dip" android:text="@string/kk_redpacket_months" />
+            </LinearLayout>
+            <View android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="11.0dip" />
+            <View android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="76.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_centerVertical="true">
+                    <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_room_text_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kk_bang_red_package_horn" />
+                    <TextView android:textSize="@dimen/kk_text_normal_size" android:textColor="@color/kk_app_tips_text" android:id="@id/redpacket_horn_delay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/kk_redpacket_delay_horn" />
+                </LinearLayout>
+                <com.melot.kkcommon.widget.SwitchButton android:id="@id/redpacket_horn_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="11.0dip" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <TextView android:textSize="@dimen/kk_text_normal_size" android:textColor="@color/kk_bang_red_package_orange" android:id="@id/redpacket_validtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="12.0dip" android:text="@string/kk_redpacket_validity" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_room_text_black" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:text="@string/kk_bang_red_package_need_money" />
+                <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_game_orange" android:layout_gravity="center_vertical" android:id="@id/need_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+            </LinearLayout>
+            <Button android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_black_100" android:gravity="center" android:id="@id/send_btn" android:background="@drawable/kk_bang_send_package_btn" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="11.0dip" android:layout_marginTop="35.0dip" android:layout_marginRight="11.0dip" android:text="@string/kk_redpacket_send" android:layout_weight="0.33" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

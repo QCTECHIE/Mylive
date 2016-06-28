@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rootview" android:background="@color/kk_me_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/top_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/reset_pwd_title" layout="@layout/kk_bang_title_bar" />
+    </LinearLayout>
+    <com.melot.kkcommon.widget.EditInputLayout android:id="@id/reset_password_old" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="11.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="11.0dip" />
+    <com.melot.kkcommon.widget.EditInputLayout android:id="@id/reset_password_new" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="11.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="11.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="right" android:orientation="horizontal" android:id="@id/kk_show_psw" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <ImageView android:id="@id/checkbox" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_checkbox_psw_selector" />
+        <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_room_text_gray" android:id="@id/show_password_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="11.0dip" android:text="@string/show_password" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/user_forgetpw_root" android:background="@color/kk_game_main_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/top_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/user_forgetpw_title" layout="@layout/kk_bang_title_bar" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/edit_layout" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_below="@id/top_view">
+        <TextView android:textSize="13.0sp" android:textColor="@color/kk_game_text_black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="16.0dip" android:text="@string/forget_baL" />
+        <EditText android:textSize="13.0sp" android:textColor="@color/kk_game_text_black" android:textColorHint="@color/kk_game_text_gray" android:id="@id/edt_input" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/kk_phone_register" android:maxLength="16" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/btn_delete" android:background="@color/transparent" android:paddingLeft="5.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/btndelete_selector" android:scaleType="centerInside" />
+    </LinearLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/kk_game_cata" android:id="@id/layout_note" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="10.0dip" android:text="@string/login_forget_note" android:layout_below="@id/edit_layout" />
+    <LinearLayout android:orientation="vertical" android:id="@id/button_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="93.0dip" android:layout_below="@id/edit_layout" android:layout_centerHorizontal="true">
+        <Button android:enabled="false" android:textSize="14.0sp" android:textColor="@color/kk_color_login_selector" android:gravity="center" android:id="@id/nextButton" android:background="@drawable/button_login_new_selector" android:layout_width="197.0dip" android:layout_height="40.0dip" android:text="@string/next" />
+    </LinearLayout>
+</RelativeLayout>

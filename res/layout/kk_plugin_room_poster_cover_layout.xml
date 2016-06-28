@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/room_poster_cover_view" android:background="@color/kk_black_50" android:fitsSystemWindows="true" android:clipToPadding="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/room_poster_header_layout" android:background="@color/kk_white" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_background_black" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/room_poster_title" android:layout_centerInParent="true" />
+        <Button android:textSize="@dimen/kk_text_small_size" android:textColor="@color/kk_background_black" android:gravity="center" android:id="@id/done_btn" android:background="@android:color/transparent" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/room_poster_done" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <include android:id="@id/room_poster_edit_view" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_alignParentBottom="true" layout="@layout/kk_plugin_room_poster_edit_layout" />
+</RelativeLayout>

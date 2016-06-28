@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.melot.meshow.main.liveroom.PullToRefresh android:id="@id/pullToRefresh" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/top_view"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/root_view" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/kk_game_main_gray" android:layout_width="fill_parent" android:layout_height="7.0dip" />
+            <HorizontalScrollView android:paddingTop="10.0dip" android:paddingBottom="12.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="150.0dip" style="@style/kk_view_padding">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <com.melot.meshow.main.find.KKGridView android:gravity="center" android:id="@id/follow_list" android:layout_width="1500.0dip" android:layout_height="fill_parent" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:horizontalSpacing="6.0dip" android:columnWidth="108.0dip" />
+                </LinearLayout>
+            </HorizontalScrollView>
+            <View android:background="@color/kk_game_main_gray" android:layout_width="fill_parent" android:layout_height="7.0dip" />
+            <com.melot.meshow.main.find.TitleMoreView android:id="@id/title_hot" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="85.0dip" android:layout_marginBottom="10.0dip" style="@style/kk_view_padding">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <com.melot.meshow.main.find.KKGridView android:gravity="center" android:id="@id/hot_list" android:layout_width="1500.0dip" android:layout_height="85.0dip" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:horizontalSpacing="5.0dip" android:columnWidth="60.0dip" />
+                </LinearLayout>
+            </HorizontalScrollView>
+            <View android:background="@color/kk_game_main_gray" android:layout_width="fill_parent" android:layout_height="7.0dip" />
+            <com.melot.meshow.main.find.TitleMoreView android:id="@id/title_last" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.melot.meshow.main.find.KKGridView android:gravity="center" android:id="@id/last_list" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:horizontalSpacing="5.0dip" android:verticalSpacing="5.0dip" android:columnWidth="115.0dip" android:numColumns="3" style="@style/kk_view_padding" />
+            <include android:id="@id/loading_more" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/kk_room_list_loadmore" />
+        </LinearLayout>
+    </ScrollView>
+</com.melot.meshow.main.liveroom.PullToRefresh>

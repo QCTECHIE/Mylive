@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="17.0sp" android:textColor="@color/kk_game_text_black" android:gravity="center" android:id="@id/main_hot" android:layout_width="60.0dip" android:layout_height="fill_parent" android:text="@string/main_hot" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/kk_game_text_gray" android:gravity="center" android:id="@id/main_more" android:layout_width="60.0dip" android:layout_height="fill_parent" android:text="@string/main_attention" />
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@id/main_line" android:background="@color/kk_game_text_black" android:layout_width="60.0dip" android:layout_height="2.0dip" />
+</FrameLayout>

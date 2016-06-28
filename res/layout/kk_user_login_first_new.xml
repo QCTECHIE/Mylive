@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/backImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/kk_loading_def" android:scaleType="centerCrop" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120.0dip" android:scaleType="centerInside" />
+        <View android:layout_width="1.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:background="@color/kk_game_login_live" android:layout_width="64.0dip" android:layout_height="1.0dip" android:layout_marginRight="22.0dip" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/kk_game_login_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_first_note" />
+            <View android:background="@color/kk_game_login_live" android:layout_width="64.0dip" android:layout_height="1.0dip" android:layout_marginLeft="22.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip">
+            <ImageButton android:id="@id/btn_weibo" android:background="@android:color/transparent" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="48.0dip" android:src="@drawable/icon_login_weibo" />
+            <ImageButton android:id="@id/btn_weixin" android:background="@android:color/transparent" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_login_weixin" />
+            <ImageButton android:id="@id/btn_qq" android:background="@android:color/transparent" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:src="@drawable/icon_login_qq" />
+        </LinearLayout>
+        <Button android:textSize="12.0sp" android:textColor="@color/kk_color_first_login_text" android:id="@id/btn_kk_login" android:background="@android:color/transparent" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="46.0dip" android:layout_marginBottom="17.0dip" android:text="@string/login_first_kk_login" android:drawableRight="@drawable/icon_login_first_arrow" android:drawablePadding="5.0dip" />
+    </LinearLayout>
+</FrameLayout>

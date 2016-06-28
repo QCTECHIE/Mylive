@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/kk_text_black" android:gravity="center" android:id="@id/bawdy" android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/kk_vert_roommem_dialog_report_bawdy" />
+    <View android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textColor="@color/kk_text_black" android:gravity="center" android:id="@id/attack" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/kk_vert_roommem_dialog_report_attack" />
+    <View android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textColor="@color/kk_text_black" android:gravity="center" android:id="@id/spam" android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/kk_vert_roommem_dialog_report_spam" />
+    <View android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textColor="@color/kk_text_black" android:gravity="center" android:id="@id/other" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/kk_vert_roommem_dialog_report_other" />
+</LinearLayout>

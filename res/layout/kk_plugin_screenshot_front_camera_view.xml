@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/front_camera_view_close" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="-15.0dip" android:layout_marginTop="-15.0dip" android:src="@drawable/kk_plugin_screen_front_camera_close_btn" android:scaleType="fitCenter" android:layout_alignLeft="@id/surface" android:layout_alignTop="@id/surface" />
+    <com.melot.kkplugin.widget.FixedSurfaceView android:id="@id/surface" android:layout_width="80.0dip" android:layout_height="100.0dip" android:layout_margin="15.0dip" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/enlarge_or_reduce" android:clickable="true" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="-15.0dip" android:layout_marginBottom="-15.0dip" android:src="@drawable/kk_plugin_screen_front_camera_move_btn" android:scaleType="fitCenter" android:layout_alignRight="@id/surface" android:layout_alignBottom="@id/surface" />
+</RelativeLayout>

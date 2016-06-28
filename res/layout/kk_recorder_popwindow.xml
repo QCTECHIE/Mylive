@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/recorder_popwindow" android:background="@drawable/kk_record_bg" android:layout_width="166.0dip" android:layout_height="166.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/recorder_soundwave" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/kk_body_text" android:textColor="@color/kk_background_white" android:gravity="center" android:id="@id/recorder_time" android:padding="8.0dip" android:visibility="gone" android:layout_width="166.0dip" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:text="0:00" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/kk_body_text" android:textColor="@color/kk_background_white" android:gravity="center" android:id="@id/recorder_txt" android:padding="8.0dip" android:layout_width="166.0dip" android:layout_height="wrap_content" android:layout_marginTop="124.0dip" android:text="@string/kk_room_record_cancel_detail" android:layout_centerHorizontal="true" />
+</RelativeLayout>

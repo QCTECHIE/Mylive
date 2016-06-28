@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rootview" android:background="@color/kk_game_main_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/top_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/feedback_title" layout="@layout/kk_bang_title_bar" />
+    </LinearLayout>
+    <EditText android:textSize="14.0sp" android:textColor="@color/kk_background_black" android:textColorHint="@color/kk_text_disable_gray" android:gravity="center|left|top" android:id="@id/edittext" android:background="@drawable/kk_feadback_bg" android:padding="7.0dip" android:layout_width="fill_parent" android:layout_height="250.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:hint="@string/more_setting_feedback_hint" />
+    <EditText android:textSize="14.0sp" android:textColor="@color/kk_background_black" android:textColorHint="@color/kk_text_disable_gray" android:gravity="center|left" android:id="@id/email_text" android:background="@drawable/kk_feadback_bg" android:padding="7.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:hint="@string/more_setting_feedback_email" android:singleLine="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@color/kk_luckid_darkgraw" android:layout_gravity="center_vertical" android:id="@id/feedback_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/more_setting_feedback_tips" android:layout_weight="1.0" />
+        <Button android:textSize="12.0sp" android:textColor="@color/kk_background_black" android:layout_gravity="center_vertical" android:id="@id/copy_btn" android:background="@drawable/bang_copy_btn" android:layout_width="55.0dip" android:layout_height="22.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="10.0dip" android:text="@string/kk_copy" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

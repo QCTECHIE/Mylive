@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sex_select_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/kk_text_large_size" android:textColor="@color/kk_game_dynamic_fontcolor_context" android:id="@id/sex_select_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:text="@string/kk_register_sex" />
+    <RelativeLayout android:id="@id/sex_check_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="25.0dip">
+        <ImageView android:id="@id/man_choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_enroll_sex_man_pressed" />
+        <TextView android:textSize="@dimen/kk_text_large_size" android:textColor="@color/kk_game_dynamic_fontcolor_context" android:id="@id/man_text" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kk_sex_man" android:layout_toRightOf="@id/man_choice" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/woman_choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:src="@drawable/kk_enroll_sex_woman_normal" android:layout_toRightOf="@id/man_text" />
+        <TextView android:textSize="@dimen/kk_text_large_size" android:textColor="@color/kk_game_dynamic_fontcolor_context" android:id="@id/sex_woman_text" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kk_sex_woman" android:layout_toRightOf="@id/woman_choice" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

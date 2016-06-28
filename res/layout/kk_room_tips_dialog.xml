@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/tips_dialog_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/tips_dialog_view" android:background="@drawable/kk_dialog_view_content_bg" android:layout_width="274.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/kk_text_dialog_title_size" android:textColor="@color/kk_game_dynamic_fontcolor_context" android:gravity="center" android:id="@id/title" android:background="@drawable/kk_dialog_view_top_bg" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="title" android:maxLines="2" />
+        <TextView android:textColor="@color/kk_text_gray" android:id="@id/msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="25.0dip" android:text="msg" />
+        <View android:id="@id/tips_dialog" android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_horizontal" android:id="@id/tips_btn_view" android:layout_width="fill_parent" android:layout_height="37.0dip">
+            <Button android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_text_gray" android:id="@id/cancel_btn" android:background="@drawable/kk_custom_dialog_btn" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <View android:id="@id/middle_line" android:background="@color/kk_match_uncometitle" android:visibility="gone" android:layout_width="1.0px" android:layout_height="wrap_content" />
+            <Button android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_standard_orange" android:id="@id/next_btn" android:background="@drawable/kk_custom_dialog_btn" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

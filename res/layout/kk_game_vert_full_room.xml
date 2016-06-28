@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/game_room_root" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/kk_bang_room_loading" />
+    <RelativeLayout android:id="@id/views" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.melot.game.room.widget.ComboLayout android:orientation="vertical" android:id="@id/kk_game_combo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentBottom="true">
+            <include android:id="@id/item1" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="68.0dip" layout="@layout/kk_room_gift_combo_item" />
+            <include android:id="@id/item2" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_marginTop="64.0dip" layout="@layout/kk_room_gift_combo_item" />
+            <include android:id="@id/item3" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="68.0dip" android:layout_marginTop="128.0dip" layout="@layout/kk_room_gift_combo_item" />
+        </com.melot.game.room.widget.ComboLayout>
+        <include android:id="@id/info_layout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/kk_vertfull_info" />
+        <com.melot.kkcommon.room.flyway.MarqueeView android:id="@id/flyway" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="29.0dip" android:layout_marginTop="13.0dip" android:layout_below="@id/info_layout" app:bg_alpha="4" />
+        <include android:id="@id/horn" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_below="@id/info_layout" layout="@layout/kk_bang_red_packet_fly_way" />
+        <com.melot.game.room.bang.vert.RoomMemberHlist android:id="@id/kk_game_this_rank" android:layout_width="wrap_content" android:layout_height="32.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="46.0dip" android:layout_toRightOf="@id/info_layout" />
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/kk_fragment_vert_full_bottom_view" />
+        <include android:id="@id/send_combo_btn" android:visibility="gone" android:layout_width="178.0dip" android:layout_height="178.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" layout="@layout/kk_bang_sendgift_btn" />
+        <com.melot.game.room.widget.SlipView android:id="@id/slip_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="#ff000000" android:scaleType="centerCrop" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/exit_btn" android:paddingLeft="14.0dip" android:paddingTop="17.0dip" android:layout_width="46.0dip" android:layout_height="48.0dip" android:layout_alignParentRight="true">
+        <ImageView android:duplicateParentState="true" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/kk_game_vertical_exit_btn" android:scaleType="center" />
+    </RelativeLayout>
+</RelativeLayout>

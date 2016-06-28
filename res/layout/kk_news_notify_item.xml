@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="@drawable/kk_view_foreground_bg"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/news_notify_item_root" android:background="@drawable/kk_notify_itme_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/news_root" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="11.0dip">
+            <TextView android:textSize="@dimen/kk_text_big_size" android:textColor="@color/kk_text_black" android:ellipsize="end" android:id="@id/news_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" android:singleLine="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/news_readflag" android:background="@drawable/kk_news_bg_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/news_title" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/kk_text_small_size" android:textColor="@color/kk_text_disable_gray" android:id="@id/news_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/news_image" android:background="@color/kk_background_white" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" />
+        <TextView android:textSize="@dimen/kk_text_normal_size" android:textColor="@color/kk_app_color_dark_gray" android:id="@id/news_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="11.0dip" android:layout_marginRight="11.0dip" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/news_viewmore_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginBottom="11.0dip">
+            <RelativeLayout android:id="@id/news_viewmore" android:background="@drawable/kk_news_notify_infomation_bnt_bg" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_marginRight="11.0dip" android:layout_alignParentRight="true">
+                <TextView android:textSize="@dimen/kk_text_small_size" android:textColor="@color/kk_news_notify_bnt" android:gravity="center" android:id="@id/news_viewmore_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/kk_news_viewmore_notify" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/news_right_btn" android:paddingTop="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/kk_news_notfy_more_icon" android:layout_toRightOf="@id/news_viewmore_txt" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

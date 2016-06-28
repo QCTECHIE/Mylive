@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/head_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/thumbnail" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" android:src="@drawable/app_icon" />
+        <ImageView android:id="@id/recommend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_recommend" />
+        <include android:id="@id/load_more" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginLeft="2.0dip" android:layout_marginTop="2.0dip" layout="@layout/kk_followed_more" />
+    </LinearLayout>
+    <TextView android:textSize="11.0sp" android:textColor="@color/kk_room_text_black" android:ellipsize="end" android:gravity="center" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxWidth="80.0dip" android:text="@string/app_name" android:singleLine="true" android:layout_below="@id/head_layout" android:layout_alignLeft="@id/head_layout" android:layout_alignRight="@id/head_layout" />
+</RelativeLayout>

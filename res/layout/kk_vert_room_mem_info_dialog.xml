@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/dialog_layout" android:background="@drawable/kk_vertfull_mem_info_dialog_bg" android:layout_width="270.0dip" android:layout_height="303.0dip" android:layout_centerInParent="true">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="31.0dip">
+                <TextView android:textSize="12.0sp" android:textColor="@color/kk_text_black" android:gravity="center" android:id="@id/more" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/kk_vert_roommem_dialog_more" />
+                <ImageView android:id="@id/close" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_vert_roommem_dialog_close" android:layout_alignParentRight="true" android:contentDescription="@null" />
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_top" android:layout_width="fill_parent" android:layout_height="154.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip">
+                        <TextView android:textSize="12.0sp" android:textColor="@color/kk_text_black" android:gravity="center" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Name" />
+                        <ImageView android:id="@id/gender_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:contentDescription="@null" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/id_loc_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                        <TextView android:textSize="10.0sp" android:textColor="@color/kk_text_gray" android:gravity="center" android:id="@id/userid" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/kk_vert_roommem_dialog_loc_icon" android:contentDescription="@null" />
+                        <TextView android:textSize="10.0sp" android:textColor="@color/kk_text_gray" android:gravity="center" android:id="@id/city" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" />
+                    </LinearLayout>
+                    <TextView android:textSize="12.0sp" android:textColor="@color/kk_room_my_card_certified" android:ellipsize="end" android:id="@id/layout_certified" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_level" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="32.0dip" android:paddingRight="32.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <ProgressBar android:id="@id/level_progress" android:layout_width="fill_parent" android:layout_height="6.0dip" android:layout_marginLeft="33.5dip" android:max="100" android:progressDrawable="@drawable/kk_namecard_pregress_style" android:layout_centerVertical="true" style="?android:attr/progressBarStyleHorizontal" />
+                            <com.melot.game.room.widget.LevelImageView android:id="@id/level_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <TextView android:textSize="10.0sp" android:textColor="@color/kk_game_level_pregress_note" android:id="@id/level_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_buttom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_top">
+                    <RelativeLayout android:id="@id/data1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="5.0dip" android:layout_weight="1.0">
+                        <include android:id="@id/income" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="33.0dip" android:layout_centerVertical="true" layout="@layout/kk_vert_room_mem_info_dialog_data" />
+                        <include android:id="@id/send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="151.0dip" android:layout_centerVertical="true" layout="@layout/kk_vert_room_mem_info_dialog_data" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/data2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+                        <include android:id="@id/attention" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="33.0dip" android:layout_centerVertical="true" layout="@layout/kk_vert_room_mem_info_dialog_data" />
+                        <include android:id="@id/fans" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="151.0dip" android:layout_centerVertical="true" layout="@layout/kk_vert_room_mem_info_dialog_data" />
+                    </RelativeLayout>
+                    <View android:id="@id/line" android:background="@color/kk_match_uncometitle" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/btn_pool" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <Button android:gravity="center" android:id="@id/btn_attention" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/kk_vert_roommem_dialog_follow_str" android:layout_weight="1.0" />
+                        <View android:background="@color/kk_match_uncometitle" android:layout_width="1.0dip" android:layout_height="20.0dip" />
+                        <Button android:gravity="center" android:id="@id/btn_chat" android:background="@android:color/transparent" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/kk_vert_roommem_dialog_chat_str" android:layout_weight="1.0" />
+                        <View android:id="@id/chat_line" android:background="@color/kk_match_uncometitle" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="20.0dip" />
+                        <Button android:gravity="center" android:id="@id/btn_chat_outside" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="40.0dip" android:text="@string/kk_vert_roommem_dialog_chat_str_outside" android:layout_weight="1.0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <com.melot.kkcommon.widget.CircleImageView android:id="@id/avatar" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/kk_default_avatar_big_men" android:layout_centerHorizontal="true" />
+            <RelativeLayout android:id="@id/layout_super_first" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="32.0dip" android:layout_marginTop="41.0dip" android:layout_marginRight="7.0dip" android:layout_toLeftOf="@id/avatar">
+                <com.melot.kkcommon.widget.CircleImageView android:id="@id/avator_first_fans" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/kk_me_default_head_sculpture" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_room_namecard_super_first" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/layout_super_second" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="32.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="41.0dip" android:layout_toRightOf="@id/avatar">
+                <com.melot.kkcommon.widget.CircleImageView android:id="@id/avator_second_fans" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/kk_me_default_head_sculpture" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_room_namecard_super_second" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

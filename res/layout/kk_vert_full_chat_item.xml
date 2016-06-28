@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/chat_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+    <TextView android:textSize="@dimen/kk_room_chat_text_size" android:textColor="#ffffffff" android:id="@id/chat_view" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:shadowColor="#ff000000" android:shadowDx="2.0" android:shadowDy="2.0" android:shadowRadius="2.0" android:layout_toRightOf="@id/chat_level" android:layout_centerVertical="true" />
+</RelativeLayout>

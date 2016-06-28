@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/head_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.melot.kkcommon.widget.CircleImageView android:id="@id/thumbnail" android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/app_icon" />
+        <include android:id="@id/load_more" android:visibility="gone" android:layout_width="64.0dip" android:layout_height="64.0dip" layout="@layout/kk_hot_more" />
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/user_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_main_hot_first" android:scaleType="centerInside" />
+    </FrameLayout>
+    <TextView android:textSize="11.0sp" android:textColor="@color/kk_room_text_black" android:ellipsize="end" android:gravity="center" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxWidth="60.0dip" android:text="@string/app_name" android:singleLine="true" android:layout_below="@id/head_layout" android:layout_alignLeft="@id/head_layout" android:layout_alignRight="@id/head_layout" />
+</RelativeLayout>

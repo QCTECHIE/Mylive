@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/kk_wechat_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/top_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/feedback_title" layout="@layout/kk_bang_title_bar" />
+    </LinearLayout>
+    <ImageView android:id="@id/kk_wechat_pic" android:background="@drawable/kk_bang_wechat_public" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:scaleType="fitCenter" android:layout_below="@id/top_view" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/kk_text_normal_size" android:textColor="@color/kk_background_black" android:id="@id/kk_wechat_public_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/wechat_public_title" android:layout_below="@id/kk_wechat_pic" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/kk_text_normal_size" android:textColor="@color/kk_background_black" android:id="@id/kk_wechat_public" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/wechat_public" android:layout_below="@id/kk_wechat_public_title" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/kk_text_normal_size" android:textColor="@color/kk_background_black" android:gravity="center" android:id="@id/kk_wechat_copy_btn" android:background="@drawable/kk_change_btn" android:layout_width="295.0dip" android:layout_height="35.0dip" android:layout_marginTop="20.0dip" android:text="@string/wechat_copy" android:layout_below="@id/kk_wechat_public" android:layout_centerHorizontal="true" />
+</RelativeLayout>

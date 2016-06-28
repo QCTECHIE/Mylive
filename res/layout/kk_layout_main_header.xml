@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/kk_title_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.melot.kkcommon.widget.CircleImageView android:id="@id/avatar" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/kk_me_default_head" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/title_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/im_layout" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/im_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_bang_im_button" />
+        <TextView android:textSize="8.0sp" android:textColor="@color/kk_text_white" android:gravity="center" android:id="@id/im_number" android:background="@drawable/kk_bang_room_im_num_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-10.0dip" android:text="" android:singleLine="true" android:layout_toRightOf="@id/im_btn" />
+    </RelativeLayout>
+    <ImageView android:id="@id/id_search_btn" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="40.0dip" android:src="@drawable/button_search_bg_selector" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

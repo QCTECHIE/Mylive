@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/kk_room_redpacket_bg" android:layout_width="113.0dip" android:layout_height="132.0dip" android:layout_margin="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/kk_text_white" android:ellipsize="end" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:maxWidth="96.0dip" android:singleLine="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/grab_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="67.0dip" android:src="@drawable/kk_room_redpacket_btn_selector" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/kk_text_white" android:ellipsize="none" android:gravity="center" android:id="@id/num" android:background="@drawable/kk_room_redpacket_num_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-19.0dip" android:layout_marginTop="65.0dip" android:singleLine="true" android:layout_toRightOf="@id/grab_btn" />
+    <ImageView android:id="@id/red_close_btn" android:paddingLeft="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_room_redpacket_close_btn" android:layout_alignParentRight="true" android:contentDescription="@null" />
+    <ImageView android:id="@id/open_anim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+</RelativeLayout>

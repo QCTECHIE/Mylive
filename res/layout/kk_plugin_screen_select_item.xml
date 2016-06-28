@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="15.0dip" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="直播状态" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:id="@id/right_rl" android:background="@drawable/kk_plugin_screen_select_right_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/checked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_plugin_screen_select_right" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/left_rl" android:background="@drawable/kk_plugin_screen_select_left_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/right_rl">
+        <ImageView android:id="@id/unchecked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/kk_plugin_screen_select_left" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

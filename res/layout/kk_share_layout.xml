@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/share_weibo_root" android:background="@color/kk_background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/top_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/share_weibo_title" layout="@layout/kk_bang_title_bar" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/share_weibo_dialog" android:background="@drawable/kk_namecard_item_single_normal" android:layout_width="fill_parent" android:layout_height="184.0dip" android:layout_margin="8.0dip" android:layout_below="@id/top_view">
+        <ImageView android:id="@id/share_pic" android:layout_width="60.0dip" android:layout_height="80.0dip" android:layout_margin="10.0dip" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <ProgressBar android:id="@id/pic_progress" android:visibility="invisible" android:layout_width="60.0dip" android:layout_height="80.0dip" android:layout_margin="10.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <EditText android:textSize="@dimen/kk_body_text" android:textColor="@color/kk_app_color_black" android:gravity="center|left|top" android:id="@id/share_edit_text" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="114.0dip" android:layout_margin="10.0dip" android:hint="@string/kk_room_share_reason" android:layout_toRightOf="@id/share_pic" />
+        <ImageView android:id="@id/share_sina" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/kk_share_sina_none" android:layout_alignParentBottom="true" android:onClick="choiceSina" />
+    </RelativeLayout>
+</RelativeLayout>
